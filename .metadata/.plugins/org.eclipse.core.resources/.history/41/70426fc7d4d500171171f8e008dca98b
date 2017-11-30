@@ -5,10 +5,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.Set;
 import java.util.zip.ZipInputStream;
 
@@ -193,24 +190,6 @@ public class TestJBPM {
     	 //根据版本搜索
     	 query.orderAsc(ProcessDefinitionQuery.PROPERTY_VERSION);
     	 List<ProcessDefinition> list = query.list();
-    	 
-    	 //保存数据的map
-    	 Map<String,ProcessDefinition> map = new HashMap<String,ProcessDefinition>();
-    	 
-    	 //循环展示下
-    	 for(ProcessDefinition pd:list){
-    		 System.out.println(pd.getId()+"---"+pd.getKey()+"--"+pd.getVersion());
-    		 map.put(pd.getKey(), pd);
-    	 }
-    	 
-    	 System.out.println("--------------");
-    	 
-    	 //展示处理后的效果
-    	 List<ProcessDefinition> pdList = new ArrayList<ProcessDefinition>(map.values());
-    	 for(ProcessDefinition pd:pdList){
-    		 System.out.println(pd.getId()+"---"+pd.getKey()+"--"+pd.getVersion());
-    	 }
-    	 
      }
      
 }

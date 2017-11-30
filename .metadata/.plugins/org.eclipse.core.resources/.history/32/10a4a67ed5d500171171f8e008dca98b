@@ -209,6 +209,7 @@ public class TestJBPM {
     	 List<ProcessDefinition> pdList = new ArrayList<ProcessDefinition>(map.values());
     	 for(ProcessDefinition pd:pdList){
     		 System.out.println(pd.getId()+"---"+pd.getKey()+"--"+pd.getVersion());
+    		 map.put(pd.getKey(), pd);
     	 }
     	 
      }

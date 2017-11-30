@@ -206,10 +206,7 @@ public class TestJBPM {
     	 System.out.println("--------------");
     	 
     	 //展示处理后的效果
-    	 List<ProcessDefinition> pdList = new ArrayList<ProcessDefinition>(map.values());
-    	 for(ProcessDefinition pd:pdList){
-    		 System.out.println(pd.getId()+"---"+pd.getKey()+"--"+pd.getVersion());
-    	 }
+    	 List<ProcessDefinition> pdList = new ArrayList<ProcessDefinition>();
     	 
      }
      
