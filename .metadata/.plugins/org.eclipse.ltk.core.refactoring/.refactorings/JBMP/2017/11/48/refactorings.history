@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.cblue.day01&apos; to &apos;com.cblue.jbpm01&apos;&#x0A;- Original project: &apos;JBMP&apos;&#x0A;- Original element: &apos;JBMP/src/com.cblue.day01&apos;&#x0A;- Renamed element: &apos;JBMP/src/com.cblue.jbpm01&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.cblue.day01&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.cblue.day01" name="com.cblue.jbpm01" qualified="false" references="true" stamp="1512026242199" textual="false" version="1.0"/>
+</session>

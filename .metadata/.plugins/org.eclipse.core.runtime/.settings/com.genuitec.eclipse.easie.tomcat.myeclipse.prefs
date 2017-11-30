@@ -1,0 +1,6 @@
+#Fri Nov 24 21:19:51 CST 2017
+LIBRARY_PATH="/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/bin\:/Applications/MyEclipse/Common/plugins/com.genuitec.eclipse.easie.tomcat.myeclipse_9.0.0.me201109141806/tomcat/bin"
+tomcat.configuration.version.current=2
+eclipse.preferences.version=1
+JDK_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home
+ENDORSED_DIRS="/Applications/MyEclipse/Common/plugins/com.genuitec.eclipse.easie.tomcat.myeclipse_9.0.0.me201109141806/tomcat/common/endorsed"

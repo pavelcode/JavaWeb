@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.jbpm.api.Configuration"/>
+<fullyQualifiedTypeName name="org.jbpm.api.ProcessEngine"/>
+<fullyQualifiedTypeName name="org.jbpm.api.NewDeployment"/>
+<fullyQualifiedTypeName name="com.sun.imageio.plugins.common.InputStreamAdapter"/>
+<fullyQualifiedTypeName name="java.util.zip.ZipInputStream"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="java.io.FileInputStream"/>
+<fullyQualifiedTypeName name="org.jbpm.api.ProcessDefinitionQuery"/>
+<fullyQualifiedTypeName name="antlr.collections.List"/>
+<fullyQualifiedTypeName name="org.jbpm.api.ProcessDefinition"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.Set"/>
+<fullyQualifiedTypeName name="java.io.InputStream"/>
+<fullyQualifiedTypeName name="java.io.OutputStream"/>
+<fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+<fullyQualifiedTypeName name="org.jbpm.api.ProcessInstance"/>
+<fullyQualifiedTypeName name="org.jbpm.api.TaskQuery"/>
+<fullyQualifiedTypeName name="org.jbpm.api.task.Task"/>
+<fullyQualifiedTypeName name="org.junit.Before"/>
+</qualifiedTypeNameHistroy>
