@@ -7,9 +7,7 @@
 <fullyQualifiedTypeName name="java.util.zip.ZipInputStream"/>
 <fullyQualifiedTypeName name="java.io.File"/>
 <fullyQualifiedTypeName name="java.io.FileInputStream"/>
-<fullyQualifiedTypeName name="org.jbpm.api.ProcessDefinitionQuery"/>
 <fullyQualifiedTypeName name="antlr.collections.List"/>
-<fullyQualifiedTypeName name="org.jbpm.api.ProcessDefinition"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.Set"/>
 <fullyQualifiedTypeName name="java.io.InputStream"/>
@@ -19,4 +17,9 @@
 <fullyQualifiedTypeName name="org.jbpm.api.TaskQuery"/>
 <fullyQualifiedTypeName name="org.jbpm.api.task.Task"/>
 <fullyQualifiedTypeName name="org.junit.Before"/>
+<fullyQualifiedTypeName name="org.jbpm.api.ProcessDefinitionQuery"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="org.jbpm.api.ProcessDefinition"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>

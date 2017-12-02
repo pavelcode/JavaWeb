@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<process name="一次淘宝交易" xmlns="http://jbpm.org/4.4/jpdl">
+   <start name="start1" g="205,76,48,48">
+      <transition name="to fork1" to="fork1" g="-46,-18"/>
+   </start>
+   <end name="end1" g="224,430,48,48"/>
+   <fork name="fork1" g="204,148,48,48">
+      <transition name="to task1" to="付钱" g="-48,-18"/>
+      <transition name="to task2" to="发货" g="-48,-18"/>
+   </fork>
+   <task name="付钱" g="113,207,92,52" assignee="买家">
+      <transition name="to task3" to="收货" g="-48,-18"/>
+   </task>
+   <task name="发货" g="270,203,92,52" assignee="卖家">
+      <transition name="to task4" to="收钱" g="-48,-18"/>
+   </task>
+   <task name="收货" g="121,291,92,52" assignee="买家">
+      <transition name="to join1" to="join1" g="-45,-18"/>
+   </task>
+   <task name="收钱" g="287,282,92,52" assignee="卖家">
+      <transition name="to join1" to="join1" g="-45,-18"/>
+   </task>
+   <join name="join1" g="222,360,48,48">
+      <transition name="to end1" to="end1" g="-46,-18"/>
+   </join>
+  
+</process>

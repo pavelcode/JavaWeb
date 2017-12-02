@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="TestState.deployProcess" project="JBMP" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testcase name="deployProcess" classname="com.cblue.jbpm02.TestState" time="2.654"/>
+</testrun>

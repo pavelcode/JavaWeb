@@ -1,0 +1,19 @@
+package com.cblue.jbpm04;
+
+import org.jbpm.api.jpdl.DecisionHandler;
+import org.jbpm.api.model.OpenExecution;
+
+public class MyHandler implements DecisionHandler {
+
+	/**
+	 * @return 判断之后，下一步的路径名
+	 */
+	@Override
+	public String decide(OpenExecution arg0) {
+		String name＝"不超过300";
+		//通过变量获得花的钱
+		
+		return null;
+	}
+
+}

@@ -1,0 +1,25 @@
+package com.cblue.jbpm01;
+
+import org.junit.Test;
+
+public class TestVariable {
+	
+	@Test
+	public void setVar(){
+		//使用ExecutionService
+		
+		//使用TaskService
+		
+		
+		
+		
+	}
+	
+	@Test
+	public void getVar(){
+		
+		
+		
+	}
+
+}

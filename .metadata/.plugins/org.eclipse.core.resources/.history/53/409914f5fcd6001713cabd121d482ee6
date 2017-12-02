@@ -1,0 +1,5 @@
+package com.cblue.jbpm05;
+
+public class TestForkJoin {
+
+}

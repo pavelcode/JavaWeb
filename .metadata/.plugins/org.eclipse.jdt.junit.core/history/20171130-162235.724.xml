@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testrun name="TestJBPM.testDeploy02" project="JBMP" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testcase name="testDeploy02" classname="com.cblue.jbpm01.TestJBPM" time="2.779"/>
-</testrun>
