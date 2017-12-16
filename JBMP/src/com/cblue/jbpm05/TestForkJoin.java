@@ -10,6 +10,11 @@ import org.jbpm.api.task.Task;
 import org.junit.Before;
 import org.junit.Test;
 
+/**
+ * 分支合并活动
+ * @author pavel
+ *
+ */
 public class TestForkJoin {
 	
 	

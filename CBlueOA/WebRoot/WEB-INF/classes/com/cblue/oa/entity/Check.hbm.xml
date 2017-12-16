@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<!-- class代表持久化类 table 代表持久化类对应表名 catalog 代表了数据库名字 -->
+	<class name="com.cblue.oa.entity.Check" table="oa_check">
+		<!-- id 代表主键 name 就是实例类的id名 column 代表的是表中id名 -->
+		<id name="id" column="id">
+			<!-- 代表主键的生成方式 increment代表自增 -->
+			<generator class="increment"></generator>
+		</id>
+		<property name="checkDate" column="checkDate" type="java.util.Date"></property>
+		<property name="isPass" column="isPass" type="java.lang.Boolean"></property>
+		<property name="checkIdea" column="checkIdea"></property>
+		<!-- 审核和申请的多对一的关系 -->
+		<many-to-one name="apply" class="com.cblue.oa.entity.Apply"
+			column="applyId"></many-to-one>
+
+		<!-- 审核和用户的多对一关系 -->
+		<many-to-one name="checkUser" class="com.cblue.oa.entity.User"
+			column="userId"></many-to-one>
+	</class>
+
+</hibernate-mapping>

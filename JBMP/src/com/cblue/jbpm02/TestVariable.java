@@ -13,6 +13,11 @@ import org.jbpm.api.task.Task;
 import org.junit.Before;
 import org.junit.Test;
 
+/**
+ * 流程变量
+ * @author pavel
+ *
+ */
 public class TestVariable {
 	
 	ProcessEngine processEngine;

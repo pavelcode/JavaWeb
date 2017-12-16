@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- 
+    class代表持久化类
+    table 代表持久化类对应表名
+    catalog 代表了数据库名字
+   -->
+   <class name="com.cblue.oa.entity.User" table="oa_user">
+       <!-- 
+         id 代表主键
+         name 就是实例类的id名
+         column 代表的是表中id名
+        -->
+       <id name="id" column="id">
+            <!-- 
+                                    代表主键的生成方式
+               increment代表自增                     
+             -->
+            <generator class="increment"></generator>
+       </id>
+       <property name="loginName" length="20"></property>
+       <property name="password"></property>
+       <property name="name" length="20"></property>
+       <property name="sex"></property>
+       <property name="phone"></property>
+       <property name="email"></property>
+       <property name="description" length="120"></property>
+       
+       <!-- 用户和部门是多对一关系 -->
+       <many-to-one name="department" class="com.cblue.oa.entity.Department" column="departmentId" lazy="false"></many-to-one>
+ 
+        <!-- 角色和用户之间的多对多 -->
+        <set name="roles" table="user_role" lazy="false">
+          <key column="userId"></key>
+          <many-to-many class="com.cblue.oa.entity.Role" column="roleId"></many-to-many>
+        </set>
+ 
+   </class>
+
+</hibernate-mapping>

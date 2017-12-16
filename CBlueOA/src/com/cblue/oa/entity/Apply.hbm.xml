@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- 
+    class代表持久化类
+    table 代表持久化类对应表名
+    catalog 代表了数据库名字
+   -->
+   <class name="com.cblue.oa.entity.Apply" table="oa_apply">
+       <!-- 
+         id 代表主键
+         name 就是实例类的id名
+         column 代表的是表中id名
+        -->
+       <id name="id" column="id">
+            <!-- 
+                                    代表主键的生成方式
+               increment代表自增                     
+             -->
+            <generator class="increment"></generator>
+       </id>
+       <property name="filePath" column="filePath"></property>
+       <property name="title" column="title"></property>
+       <property name="applyDate" column="applyDate" type="java.util.Date"></property>
+       <property name="applyStatus" column="applyStatus"></property>
+       
+       <!-- 用户和申请的多对一关系 -->
+       <many-to-one name="applyUser" class="com.cblue.oa.entity.User" column="userId" lazy="false"></many-to-one>
+       
+       <!-- 模板和申请的多对一关系 -->
+       <many-to-one name="template" class="com.cblue.oa.entity.Template" column="templateId" lazy="false"></many-to-one>
+ 
+       <!-- 申请和审核的一对多关系 -->
+       <set name="checks">
+          <key column="applyId"></key>
+          <one-to-many class="com.cblue.oa.entity.Check"/>
+       </set>
+ 
+ 
+   </class>
+
+</hibernate-mapping>

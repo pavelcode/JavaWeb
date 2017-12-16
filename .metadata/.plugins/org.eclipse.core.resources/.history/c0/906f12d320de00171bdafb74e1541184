@@ -1,0 +1,7 @@
+package com.cblue.oa.action;
+
+import org.springframework.web.struts.ActionSupport;
+
+public class ProcessDefinitionAction extends ActionSupport {
+
+}

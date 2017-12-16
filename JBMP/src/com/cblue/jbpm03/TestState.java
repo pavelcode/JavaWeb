@@ -7,6 +7,12 @@ import org.jbpm.api.ProcessInstance;
 import org.junit.Before;
 import org.junit.Test;
 
+
+/**
+ * 状态活动
+ * @author pavel
+ *
+ */
 public class TestState {
 	
 	
