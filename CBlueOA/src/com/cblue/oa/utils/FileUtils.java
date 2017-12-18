@@ -69,11 +69,11 @@ public class FileUtils {
 	 * @param template
 	 * @return
 	 */
-	public static String downloadFileName(Template template){
+	public static String downloadFileName(String fileNameStr){
 		String fileName = null;
 		String agent = ServletActionContext.getRequest().getHeader("user-agent");		
 		try {
-			fileName = encodeDownloadFilename(template.getName() + ".doc", agent) ;
+			fileName = encodeDownloadFilename(fileNameStr + ".doc", agent) ;
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

@@ -140,7 +140,8 @@
 				<param name="namespace">/</param>
 			</result>
 			<result name="myCheckList">/WEB-INF/jsp/flow/mychecklist.jsp</result>
-			
+			<result name="checkHistory">/WEB-INF/jsp/flow/checkhistory.jsp</result>
+			<result name="checkUI">/WEB-INF/jsp/flow/check.jsp</result>
 		</action>
 
 	</package>

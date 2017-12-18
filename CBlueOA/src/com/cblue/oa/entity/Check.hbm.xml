@@ -15,11 +15,11 @@
 		<property name="checkIdea" column="checkIdea"></property>
 		<!-- 审核和申请的多对一的关系 -->
 		<many-to-one name="apply" class="com.cblue.oa.entity.Apply"
-			column="applyId"></many-to-one>
+			column="applyId" lazy="false"></many-to-one>
 
 		<!-- 审核和用户的多对一关系 -->
 		<many-to-one name="checkUser" class="com.cblue.oa.entity.User"
-			column="userId"></many-to-one>
+			column="userId" lazy="false"></many-to-one>
 	</class>
 
 </hibernate-mapping>

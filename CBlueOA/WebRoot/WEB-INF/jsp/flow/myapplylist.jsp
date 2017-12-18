@@ -80,8 +80,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<td>${applyUser.name}&nbsp;</td>
 					<td>${applyDate}&nbsp;</td>
 					<td>${applyStatus}&nbsp;</td>
-					<td><a href="${pageContext.request.contextPath}/Flow_Formflow/showForm.html">查看申请信息</a>
-						<a href="${pageContext.request.contextPath}/Flow_Formflow/approvedHistory.html">查看流转记录</a>
+					<td><s:a action="flow_downloadApplyFile?applyId=%{id}" namespace="/">查看申请信息</s:a>
+						<s:a action="flow_historyRecord?applyId=%{id}" namespace="/">查看流转记录</s:a>
 					</td>
 				</tr>
 			</s:iterator>

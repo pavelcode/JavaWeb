@@ -1,0 +1,14 @@
+#Mon Dec 18 16:21:56 CST 2017
+tomcat7Server.CBlueOA.isExploded=true
+tomcat7Server.CBlueOA.isUptoDate=true
+tomcat7Server.CBlueOA.altContextRoot=
+tomcat7Server.CBlueOA.type=WebDeployment
+tomcat7Server.CBlueOA.shouldBackup=false
+tomcat7Server.CBlueOA.deploymentPath=/Users/pavel/Documents/java/apache-tomcat-7.0.82/webapps/CBlueOA
+tomcat7Server.CBlueOA.shouldOverwrite=false
+tomcat7Server.CBlueOA.isDeployed=true
+tomcat7Server.CBlueOA.IEARProjectName=
+tomcat7Server.CBlueOA.noFileCopy=false
+eclipse.preferences.version=1
+tomcat7Server.CBlueOA.contextRoot=/CBlueOA
+tomcat7Server.CBlueOA.deployIsOverProject=false

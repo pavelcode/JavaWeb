@@ -12,6 +12,8 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 
 import com.cblue.oa.entity.Apply;
+import com.cblue.oa.entity.Check;
+import com.cblue.oa.entity.TaskView;
 import com.cblue.oa.entity.Template;
 import com.cblue.oa.entity.User;
 import com.cblue.oa.service.IFlowService;
@@ -131,10 +133,12 @@ public class FlowAction extends ActionSupport {
 		//获得下载流对象
 		downloadInputStream = FileUtils.getFileInputStream(template.getFilePath());
 		//获得下载的文件名
-		downloadFileName = FileUtils.downloadFileName(template);
+		downloadFileName = FileUtils.downloadFileName(template.getName());
 		
 		return "download";
 	}
+	
+	
 	
 	private int currentPage=1;
 	private int status;
@@ -199,12 +203,119 @@ public class FlowAction extends ActionSupport {
 		return "myApplyList";
 	}
 	
+	private Long applyId;
+	
+	
+	public Long getApplyId() {
+		return applyId;
+	}
+
+	public void setApplyId(Long applyId) {
+		this.applyId = applyId;
+	}
+
+	//下载申请文件
+	public String downloadApplyFile(){
+		Apply apply = flowService.getApplyById(applyId);
+		//获得下载流对象
+		downloadInputStream = FileUtils.getFileInputStream(apply.getFilePath());
+				//获得下载的文件名
+		downloadFileName = FileUtils.downloadFileName(apply.getTemplate().getName());
+		
+		return "download";
+	}
+	
+	/**
+	 * 如果你要完成待我审核
+	 * 1 获得该我审核的审核记录
+	 * 
+	 */
+	
 	//跳转到待我审核
 	public String toMyCheckList(){
-		
+		List<TaskView> taskViews = flowService.getMyCheckTaskList(getLoginUser());
+		ActionContext.getContext().getValueStack().set("taskViews", taskViews);
 		
 		return "myCheckList";
 	}
+	
+	
+	
+	//查看历史记录
+	public String  historyRecord(){
+		
+		List<Check> checks = flowService.getAllCheckById(applyId);
+		ActionContext.getContext().getValueStack().set("checks", checks);
+		return "checkHistory";
+		
+	}
+	
+	private String taskId;
+	private String comment;
+	private Boolean isPass;
+	
+	
+	public String getComment() {
+		return comment;
+	}
+
+	public void setComment(String comment) {
+		this.comment = comment;
+	}
+
+	public Boolean getIsPass() {
+		return isPass;
+	}
+
+	public void setIsPass(Boolean isPass) {
+		this.isPass = isPass;
+	}
+
+	public String getTaskId() {
+		return taskId;
+	}
+
+	public void setTaskId(String taskId) {
+		this.taskId = taskId;
+	}
+
+	//跳转到审核页面
+	public String checkUI(){
+		
+		
+		return "checkUI";
+	}
+	
+	/**
+	 * 1 保存审核实体
+	 * 2 办理任务
+	 * 3 当我点击同意的时候，进入下一个任务。下一个任务是否结束。如果结束，结束流程
+	 * 4 当我点击不同的时候，结束流程
+	 * @return
+	 */
+	
+	//完成审核
+	public String check(){
+		
+		Apply apply = flowService.getApplyById(applyId);
+		
+		//保存审核实体
+		Check check = new  Check();
+		check.setApply(apply);
+		check.setCheckDate(new Date());
+		check.setCheckIdea(getComment());
+		check.setCheckUser(getLoginUser());
+		check.setIsPass(getIsPass());
+		
+		flowService.check(check,getTaskId());
+		
+		
+		return "toMyCheckList";
+	}
+	
+	
+	
+	
 	
 	
 

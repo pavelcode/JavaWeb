@@ -65,18 +65,22 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<td>相关操作</td>
 			</tr>
 		</thead>		
+		
 		<!--显示数据列表-->
         <tbody id="TableData" class="dataContainer" datakey="formList">
+           <s:iterator value="taskViews">
 			<tr class="TableDetail1 template">
-				<td><a href="approveUI.html">${form.title}</a></td>
-				<td>${form.applicant.name}&nbsp;</td>
-				<td>${form.applyTime}&nbsp;</td>
-				<td><a href="approveUI.html">审批处理</a>
+				<td>${apply.title}</td>
+				<td>${apply.applyUser.name}&nbsp;</td>
+				<td><s:date name="apply.applyDate" format="yyyy-MM-dd HH:mm"/>&nbsp;</td>
+				<td><s:a action="flow_checkUI?applyId=%{apply.id}&taskId=%{task.id}" namespace="/">审批处理</s:a>
 					<!-- <a href="showForm.html">查看申请信息</a> -->
-					<a href="approvedHistory.html">查看流转记录</a>
+					<s:a action="flow_historyRecord?applyId=%{apply.id}" namespace="/">查看流转记录</s:a>
 				</td>
 			</tr>
+			 </s:iterator>
         </tbody>
+       
     </table>
     
     <!-- 其他功能超链接 -->
@@ -84,40 +88,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 </div>
 
 <!--分页信息-->
-<div id=PageSelectorBar>
-	<div id=PageSelectorMemo>
-		页次：7/13页 &nbsp;
-		每页显示：30条 &nbsp;
-		总记录数：385条
-	</div>
-	<div id=PageSelectorSelectorArea>
-		<!--
-		<IMG SRC="${pageContext.request.contextPath}/style/blue/images/pageSelector/firstPage2.png"/>
-		-->
-		<a href="javascript:void(0)" title="首页" style="cursor: hand;">
-			<img src="${pageContext.request.contextPath}/style/blue/images/pageSelector/firstPage.png"/></a>
-		
-		<span class="PageSelectorNum" style="cursor: hand;" onClick="gotoPageNum(2);">3</span>
-		<span class="PageSelectorNum" style="cursor: hand;" onClick="gotoPageNum(2);">4</span>
-		<span class="PageSelectorNum" style="cursor: hand;" onClick="gotoPageNum(2);">5</span>
-		<span class="PageSelectorNum" style="cursor: hand;" onClick="gotoPageNum(2);">6</span>
-		<span class="PageSelectorNum PageSelectorSelected">7</span>
-		<span class="PageSelectorNum" style="cursor: hand;" onClick="gotoPageNum(2);">8</span>
-		<span class="PageSelectorNum" style="cursor: hand;" onClick="gotoPageNum(2);">9</span>
-		<span class="PageSelectorNum" style="cursor: hand;" onClick="gotoPageNum(2);">10</span>
-		<span class="PageSelectorNum" style="cursor: hand;" onClick="gotoPageNum(2);">11</span>
-		<span class="PageSelectorNum" style="cursor: hand;" onClick="gotoPageNum(2);">12</span>
-		
-		<!--
-		<IMG SRC="${pageContext.request.contextPath}/style/blue/images/pageSelector/lastPage2.png"/>
-		-->
-		<a href="#" title="尾页" style="cursor: hand;"><img src="${pageContext.request.contextPath}/style/blue/images/pageSelector/lastPage.png"/></a>
-		
-		转到：
-		<input onFocus="this.select();" maxlength="2" class="inputStyle" type="text" value="1" name="currPage" tabindex="0"/>
-		<input type="submit" name="goBtn" value="Go" class="MiddleButtonStyle" />
-	</div>
-</div>
 
 <div class="Description">
 	说明：<br />
