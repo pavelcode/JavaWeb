@@ -1,7 +1,10 @@
-#Mon Dec 18 16:13:21 CST 2017
-SERVER_ENABLEMENT=true
-eclipse.preferences.version=1
-TOMCAT_BASE=/Users/pavel/Documents/java/apache-tomcat-7.0.82
+#Mon Dec 18 23:52:53 CST 2017
 TOMCAT_HOME=/Users/pavel/Documents/java/apache-tomcat-7.0.82
 OPT_CLASSPATH1=/Users/pavel/Documents/workspace/CBlueOA/WebRoot/WEB-INF/lib/juel-api.jar;/Users/pavel/Documents/workspace/CBlueOA/WebRoot/WEB-INF/lib/juel-engine.jar;/Users/pavel/Documents/workspace/CBlueOA/WebRoot/WEB-INF/lib/juel-impl.jar
 TOMCAT_TEMP=/Users/pavel/Documents/java/apache-tomcat-7.0.82/temp
+LIBRARY_PATH="/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/bin\:/Users/pavel/Documents/java/apache-tomcat-7.0.82/bin"
+TOMCAT_BASE=/Users/pavel/Documents/java/apache-tomcat-7.0.82
+ENDORSED_DIRS="/Users/pavel/Documents/java/apache-tomcat-7.0.82/common/endorsed"
+eclipse.preferences.version=1
+JDK_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home
+SERVER_ENABLEMENT=true

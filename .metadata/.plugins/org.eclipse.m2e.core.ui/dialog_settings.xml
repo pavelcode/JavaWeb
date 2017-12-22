@@ -23,6 +23,9 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="/Users/pavel/Documents/workspace/shop-manager"/>
+			<item value="/Users/pavel/Documents/workspace/shop-parent/pom.xml"/>
+			<item value="/Users/pavel/Documents/workspace/shop-parent"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -34,10 +37,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="groupId">
+			<item value="com.cblue"/>
 		</list>
 		<list key="package">
+			<item value="org.shop.manager.web"/>
 		</list>
 		<list key="artifactId">
+			<item value="shop-manager-web"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -48,6 +54,22 @@
 		</list>
 		<list key="version">
 			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenModuleWizardParentPage">
+		<list key="moduleName">
+			<item value="shop-manager-web"/>
+			<item value="shop-manager-service"/>
+			<item value="shop-manager-interface"/>
+			<item value="shop-manager-dao"/>
+			<item value="shop-manager-pojo"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
 		</list>
 	</section>
 	<section name="wizardPage">
@@ -61,6 +83,18 @@
 			<item value="0.0.1-SNAPSHOT"/>
 		</list>
 	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="/Users/pavel/Documents/workspace/"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+		</list>
+	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
 			<item value="com.cblue"/>
@@ -68,7 +102,14 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="shop-manager-web"/>
+			<item value="shop-manager"/>
+			<item value="shop-manager-service"/>
+			<item value="shop-manager-interface"/>
+			<item value="shop-manager-dao"/>
+			<item value="shop-manager-pojo"/>
 			<item value="shop-parent"/>
+			<item value="shop-common"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

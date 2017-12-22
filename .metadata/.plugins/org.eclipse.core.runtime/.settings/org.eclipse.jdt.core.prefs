@@ -1,4 +1,4 @@
-#Sun Nov 26 03:34:20 CST 2017
+#Tue Dec 19 16:05:17 CST 2017
 org.eclipse.jdt.core.codeComplete.fieldPrefixes=
 org.eclipse.jdt.core.classpathVariable.MYECLIPSE_HIBERNATE_LIB_HOME=/Applications/MyEclipse/MyEclipse 10.app/Contents/Profile/configuration/org.eclipse.osgi/bundles/91/1/.cp/lib
 org.eclipse.jdt.core.compiler.codegen.inlineJsrBytecode=enabled
@@ -37,8 +37,8 @@ org.eclipse.jdt.core.codeComplete.argumentPrefixes=
 org.eclipse.jdt.core.classpathVariable.MYECLIPSE_ICEFACES_HOME=/Applications/MyEclipse/Common/plugins/com.genuitec.eclipse.icefaces_9.0.1.me201108091322/data
 org.eclipse.jdt.core.classpathVariable.MYECLIPSE_JPA_DATA_HOME=/Applications/MyEclipse/MyEclipse 10.app/Contents/Profile/configuration/org.eclipse.osgi/bundles/100/1/.cp/data
 org.eclipse.jdt.core.classpathVariable.MYECLIPSE_HIBERNATE_HOME=/Applications/MyEclipse/MyEclipse 10.app/Contents/Profile/configuration/org.eclipse.osgi/bundles/91/1/.cp/myeclipse-data
+org.eclipse.jdt.core.classpathVariable.M2_REPO=/Users/pavel/Documents/repo
 org.eclipse.jdt.core.classpathVariable.MYECLIPSE_HIBERNATE_DATA_HOME=/Applications/MyEclipse/MyEclipse 10.app/Contents/Profile/configuration/org.eclipse.osgi/bundles/91/1/.cp/myeclipse-data
-org.eclipse.jdt.core.classpathVariable.M2_REPO=/Users/pavel/.m2/repository
 org.eclipse.jdt.core.classpathVariable.JRE_SRCROOT=
 org.eclipse.jdt.core.codeComplete.staticFinalFieldPrefixes=
 org.eclipse.jdt.core.classpathVariable.MYECLIPSE_REPORTS_DATA_HOME=/Applications/MyEclipse/MyEclipse 10.app/Contents/Profile/configuration/org.eclipse.osgi/bundles/102/1/.cp/data

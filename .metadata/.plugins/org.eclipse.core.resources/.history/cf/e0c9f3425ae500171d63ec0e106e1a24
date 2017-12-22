@@ -1,0 +1,20 @@
+package com.cblue.shop.service.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.cblue.shop.mapper.TbItemMapper;
+import com.cblue.shop.pojo.TbItem;
+import com.cblue.shop.service.ItemService;
+
+public class ItemServiceImpl implements ItemService {
+
+	@Autowired
+	private TbItemMapper itemMapper;
+	
+	@Override
+	public TbItem getItemById(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
