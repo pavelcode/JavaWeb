@@ -56,13 +56,11 @@
 			<item value="0.0.1-SNAPSHOT"/>
 		</list>
 	</section>
-	<section name="MavenModuleWizardParentPage">
-		<list key="moduleName">
-			<item value="shop-manager-web"/>
-			<item value="shop-manager-service"/>
-			<item value="shop-manager-interface"/>
-			<item value="shop-manager-dao"/>
-			<item value="shop-manager-pojo"/>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="/Users/pavel/Documents/workspace/pagehelper-fix"/>
+			<item value="/Users/pavel/Downloads/pagehelper-fix"/>
+			<item value="/Users/pavel/Documents/workspace/"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -83,9 +81,13 @@
 			<item value="0.0.1-SNAPSHOT"/>
 		</list>
 	</section>
-	<section name="MavenProjectImportWizardPage">
-		<list key="rootDirectory">
-			<item value="/Users/pavel/Documents/workspace/"/>
+	<section name="MavenModuleWizardParentPage">
+		<list key="moduleName">
+			<item value="shop-manager-web"/>
+			<item value="shop-manager-service"/>
+			<item value="shop-manager-interface"/>
+			<item value="shop-manager-dao"/>
+			<item value="shop-manager-pojo"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

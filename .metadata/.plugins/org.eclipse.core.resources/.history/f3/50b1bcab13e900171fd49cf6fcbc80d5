@@ -1,0 +1,10 @@
+package com.cblue.maven;
+
+import org.junit.Test;
+public class TestHelloMaven{
+
+	@Test
+	public void testHelloMaven(){
+	
+	}
+}

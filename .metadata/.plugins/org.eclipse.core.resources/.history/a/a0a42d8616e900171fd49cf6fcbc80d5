@@ -1,0 +1,10 @@
+package com.cblue.test;
+
+import com.cblue.test.*;
+
+public class Hello {
+
+	public static void main(String[] args) {
+		HelloMaven helloMaven = new HelloMaven();
+	}
+}

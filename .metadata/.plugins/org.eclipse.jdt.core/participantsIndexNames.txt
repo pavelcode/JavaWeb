@@ -75,5 +75,7 @@ INDEX VERSION 1.126
 /CBlueOA/src
 /Users/pavel/Documents/workspace/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/4174990624.index
 /CBlueOA/src
+/Users/pavel/Documents/workspace/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/4042487536.index
+/maven-web/src/main/java
 /Users/pavel/Documents/workspace/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/687788841.index
 /itcast_OA/src

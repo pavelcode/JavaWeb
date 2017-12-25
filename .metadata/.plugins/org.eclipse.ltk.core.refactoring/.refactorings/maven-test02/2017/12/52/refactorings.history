@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.cblue.maven&apos; to &apos;com.cblue.test&apos;&#x0A;- Original project: &apos;maven-test02&apos;&#x0A;- Original element: &apos;maven-test02/src/main/java/com.cblue.maven&apos;&#x0A;- Renamed element: &apos;maven-test02/src/main/java/com.cblue.test&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.cblue.maven&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java&lt;com.cblue.maven" name="com.cblue.test" qualified="false" references="true" stamp="1514166851098" textual="false" version="1.0"/>
+</session>

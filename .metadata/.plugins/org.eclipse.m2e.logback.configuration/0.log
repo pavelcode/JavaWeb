@@ -4702,3 +4702,576 @@ Caused by: java.nio.channels.UnresolvedAddressException: null
 2017-12-22 20:53:19,076 [Worker-88] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2017-12-22 20:53:19,078 [Worker-88] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
 2017-12-22 20:53:19,079 [Worker-88] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-23 00:41:55,604 [Worker-94] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-23 00:41:55,606 [Worker-94] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-23 00:41:55,609 [Worker-94] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-23 00:41:55,609 [Worker-94] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-23 00:42:48,866 [Worker-95] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-23 00:42:48,867 [Worker-95] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-23 00:42:48,868 [Worker-95] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-23 00:42:48,868 [Worker-95] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 08:44:53,353 [Worker-4] INFO  o.e.m.c.i.i.nexus.NexusIndexManager - Updating index for repository: central|http://repo1.maven.org/maven2
+2017-12-25 08:44:55,560 [Worker-4] ERROR o.e.m.c.i.i.nexus.NexusIndexManager - Unable to update index for central|http://repo1.maven.org/maven2
+java.io.IOException: Server returned status code 403: Forbidden
+	at org.eclipse.m2e.core.internal.index.nexus.AsyncFetcher$PipedErrorInputStream.checkError(AsyncFetcher.java:253) ~[org.eclipse.m2e.core_1.0.0.me201110301321.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.AsyncFetcher$PipedErrorInputStream.read(AsyncFetcher.java:261) ~[org.eclipse.m2e.core_1.0.0.me201110301321.jar:na]
+	at java.io.PipedInputStream.read(PipedInputStream.java:361) ~[na:1.6.0_65]
+	at java.io.InputStream.read(InputStream.java:82) ~[na:1.6.0_65]
+	at java.util.Properties$LineReader.readLine(Properties.java:418) ~[na:1.6.0_65]
+	at java.util.Properties.load0(Properties.java:337) ~[na:1.6.0_65]
+	at java.util.Properties.load(Properties.java:325) ~[na:1.6.0_65]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.downloadIndexProperties(DefaultIndexUpdater.java:457) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.access$100(DefaultIndexUpdater.java:75) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater$IndexAdaptor.setProperties(DefaultIndexUpdater.java:607) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:788) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:135) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.updateRemoteIndex(NexusIndexManager.java:1126) [org.eclipse.m2e.core_1.0.0.me201110301321.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.updateIndex(NexusIndexManager.java:1083) [org.eclipse.m2e.core_1.0.0.me201110301321.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager$1.run(NexusIndexManager.java:660) [org.eclipse.m2e.core_1.0.0.me201110301321.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.IndexUpdaterJob.run(IndexUpdaterJob.java:71) [org.eclipse.m2e.core_1.0.0.me201110301321.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.100.v20110404.jar:na]
+java.io.IOException: Server returned status code 403: Forbidden
+	at org.eclipse.m2e.core.internal.index.nexus.AsyncFetcher$MonitorListener.onStatus(AsyncFetcher.java:283) ~[na:na]
+	at com.ning.http.client.SimpleAsyncHttpClient$BodyConsumerAsyncHandler.fireStatus(SimpleAsyncHttpClient.java:828) ~[na:na]
+	at com.ning.http.client.SimpleAsyncHttpClient$BodyConsumerAsyncHandler.onStatusReceived(SimpleAsyncHttpClient.java:779) ~[na:na]
+	at com.ning.http.client.providers.netty.NettyAsyncHttpProvider.updateStatusAndInterrupt(NettyAsyncHttpProvider.java:1439) ~[na:na]
+	at com.ning.http.client.providers.netty.NettyAsyncHttpProvider.messageReceived(NettyAsyncHttpProvider.java:1170) ~[na:na]
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:80) ~[na:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:545) ~[na:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:754) ~[na:na]
+	at org.jboss.netty.handler.stream.ChunkedWriteHandler.handleUpstream(ChunkedWriteHandler.java:148) ~[na:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:545) ~[na:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:754) ~[na:na]
+	at org.jboss.netty.handler.codec.http.HttpContentDecoder.messageReceived(HttpContentDecoder.java:104) ~[na:na]
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:80) ~[na:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:545) ~[na:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:754) ~[na:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:302) ~[na:na]
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.unfoldAndfireMessageReceived(ReplayingDecoder.java:522) ~[na:na]
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.callDecode(ReplayingDecoder.java:506) ~[na:na]
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.messageReceived(ReplayingDecoder.java:443) ~[na:na]
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:80) ~[na:na]
+	at org.jboss.netty.handler.codec.http.HttpClientCodec.handleUpstream(HttpClientCodec.java:77) ~[na:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:545) ~[na:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:540) ~[na:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:274) ~[na:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:261) ~[na:na]
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:349) ~[na:na]
+	at org.jboss.netty.channel.socket.nio.NioWorker.processSelectedKeys(NioWorker.java:280) ~[na:na]
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:200) ~[na:na]
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108) ~[na:na]
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:44) ~[na:na]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895) ~[na:1.6.0_65]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918) ~[na:1.6.0_65]
+	at java.lang.Thread.run(Thread.java:695) ~[na:1.6.0_65]
+2017-12-25 09:08:56,096 [New I/O client worker #2-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/2.3.2/maven-compiler-plugin-2.3.2.pom
+2017-12-25 09:08:56,100 [New I/O client worker #2-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/2.3.2/maven-compiler-plugin-2.3.2.pom
+2017-12-25 09:08:56,861 [New I/O client worker #3-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/2.3.2/maven-compiler-plugin-2.3.2.jar
+2017-12-25 09:08:57,150 [New I/O client worker #3-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/2.3.2/maven-compiler-plugin-2.3.2.jar
+2017-12-25 09:08:59,810 [New I/O client worker #4-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compiler-api/1.8.1/plexus-compiler-api-1.8.1.pom
+2017-12-25 09:08:59,811 [New I/O client worker #4-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compiler-api/1.8.1/plexus-compiler-api-1.8.1.pom
+2017-12-25 09:09:00,462 [New I/O client worker #5-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compiler/1.8.1/plexus-compiler-1.8.1.pom
+2017-12-25 09:09:00,463 [New I/O client worker #5-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compiler/1.8.1/plexus-compiler-1.8.1.pom
+2017-12-25 09:09:01,097 [New I/O client worker #6-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compiler-manager/1.8.1/plexus-compiler-manager-1.8.1.pom
+2017-12-25 09:09:01,098 [New I/O client worker #6-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compiler-manager/1.8.1/plexus-compiler-manager-1.8.1.pom
+2017-12-25 09:09:01,722 [New I/O client worker #7-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compiler-javac/1.8.1/plexus-compiler-javac-1.8.1.pom
+2017-12-25 09:09:01,723 [New I/O client worker #7-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compiler-javac/1.8.1/plexus-compiler-javac-1.8.1.pom
+2017-12-25 09:09:02,407 [New I/O client worker #8-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compilers/1.8.1/plexus-compilers-1.8.1.pom
+2017-12-25 09:09:02,408 [New I/O client worker #8-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compilers/1.8.1/plexus-compilers-1.8.1.pom
+2017-12-25 09:09:03,315 [New I/O client worker #9-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compiler-manager/1.8.1/plexus-compiler-manager-1.8.1.jar
+2017-12-25 09:09:03,316 [New I/O client worker #9-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compiler-manager/1.8.1/plexus-compiler-manager-1.8.1.jar
+2017-12-25 09:09:03,493 [New I/O client worker #9-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compiler-javac/1.8.1/plexus-compiler-javac-1.8.1.jar
+2017-12-25 09:09:03,506 [New I/O client worker #9-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compiler-javac/1.8.1/plexus-compiler-javac-1.8.1.jar
+2017-12-25 09:09:04,786 [New I/O client worker #9-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compiler-api/1.8.1/plexus-compiler-api-1.8.1.jar
+2017-12-25 09:09:05,039 [New I/O client worker #9-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compiler-api/1.8.1/plexus-compiler-api-1.8.1.jar
+2017-12-25 09:09:05,357 [Worker-0] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:maven-test01:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/maven-test01/pom.xml.
+2017-12-25 09:09:06,126 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.apache.commons:commons-io:jar:1.3.2 has been relocated to commons-io:commons-io:jar:1.3.2
+2017-12-25 09:09:06,826 [Worker-0] WARN  o.e.m.j.i.AbstractJavaProjectConfigurator - Could not determine source level, using default 
+2017-12-25 09:09:06,826 [Worker-0] WARN  o.e.m.j.i.AbstractJavaProjectConfigurator - Could not determine target level, using default 
+2017-12-25 09:09:07,052 [Worker-0] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /maven-test01/src/main/java
+2017-12-25 09:09:07,054 [Worker-0] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /maven-test01/src/main/resources
+2017-12-25 09:09:07,055 [Worker-0] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /maven-test01/src/test/java
+2017-12-25 09:09:07,055 [Worker-0] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /maven-test01/src/test/resources
+2017-12-25 09:09:07,604 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:maven-test01:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/maven-test01/pom.xml.
+2017-12-25 09:09:07,691 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:09:07,695 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:09:07,699 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:09:07,699 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:09:43,864 [Worker-9] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/pavel/Documents/workspace/maven-test01
+2017-12-25 09:09:43,865 [Worker-9] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -s /Users/pavel/Documents/java/apache-maven-3.5.0/conf/settings.xml test
+2017-12-25 09:19:07,517 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:19:07,521 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:19:07,524 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:19:07,524 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:19:27,918 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:19:27,919 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:19:27,920 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:19:27,921 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:19:51,713 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2017-12-25 09:20:03,287 [Worker-9] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/pavel/Documents/workspace/maven-test01
+2017-12-25 09:20:03,287 [Worker-9] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -s /Users/pavel/Documents/java/apache-maven-3.5.0/conf/settings.xml compile
+2017-12-25 09:20:35,784 [Worker-11] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/pavel/Documents/workspace/maven-test01
+2017-12-25 09:20:35,784 [Worker-11] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -s /Users/pavel/Documents/java/apache-maven-3.5.0/conf/settings.xml compile
+2017-12-25 09:20:44,650 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:20:44,651 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:20:44,653 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:20:44,654 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:26:16,296 [Worker-11] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:maven-test01:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/maven-test01/pom.xml.
+2017-12-25 09:26:16,388 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:26:16,389 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:26:16,391 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:26:16,391 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:26:17,535 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:26:17,536 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:26:17,538 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:26:17,539 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:30:10,439 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:30:10,441 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:30:10,443 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:30:10,444 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:30:49,948 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:30:49,949 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:30:49,951 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:30:49,952 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:31:26,234 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:31:26,235 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:31:26,237 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:31:26,238 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:31:26,371 [Worker-20] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:maven-test01:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/maven-test01/pom.xml.
+2017-12-25 09:31:26,441 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:31:26,442 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:31:26,443 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:31:26,444 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:31:49,703 [Worker-24] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:31:49,704 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:31:49,705 [Worker-24] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:31:49,706 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:31:54,197 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:31:54,198 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:31:54,200 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:31:54,201 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:33:07,976 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:33:07,977 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:33:07,978 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:33:07,979 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:33:11,174 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:33:11,175 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:33:11,176 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:33:11,176 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:33:55,375 [Worker-23] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/pavel/Documents/workspace/maven-test01
+2017-12-25 09:33:55,375 [Worker-23] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -s /Users/pavel/Documents/java/apache-maven-3.5.0/conf/settings.xml clean
+2017-12-25 09:33:55,442 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:33:55,443 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:33:55,445 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:33:55,446 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:34:41,762 [Worker-24] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/pavel/Documents/workspace/maven-test01
+2017-12-25 09:34:41,762 [Worker-24] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -s /Users/pavel/Documents/java/apache-maven-3.5.0/conf/settings.xml compile
+2017-12-25 09:35:32,296 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:35:32,296 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:35:32,298 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:35:32,299 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:39:48,731 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:39:48,733 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:39:48,735 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:39:48,736 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:39:50,922 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:39:50,923 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:39:50,924 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:39:50,925 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:39:55,028 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:39:55,028 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:39:55,030 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:39:55,031 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:40:14,195 [Worker-15] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/pavel/Documents/workspace/maven-test01
+2017-12-25 09:40:14,195 [Worker-15] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -s /Users/pavel/Documents/java/apache-maven-3.5.0/conf/settings.xml test
+2017-12-25 09:40:27,199 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:40:27,200 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:40:27,202 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:40:27,202 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:40:31,934 [Worker-27] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/pavel/Documents/workspace/maven-test01
+2017-12-25 09:40:31,934 [Worker-27] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -s /Users/pavel/Documents/java/apache-maven-3.5.0/conf/settings.xml test
+2017-12-25 09:43:03,222 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:43:03,223 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:43:03,224 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:43:03,225 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:43:03,287 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:43:03,288 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:43:03,289 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:43:03,290 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:43:03,985 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-25 09:43:03,985 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:43:03,988 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-25 09:43:03,990 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:43:04,049 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-25 09:43:04,050 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:43:04,052 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-25 09:43:04,053 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:43:04,119 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-25 09:43:04,124 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2017-12-25 09:43:04,154 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-25 09:43:04,159 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:43:04,348 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-25 09:43:04,349 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2017-12-25 09:43:04,354 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-25 09:43:04,355 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:43:04,484 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-25 09:43:04,485 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-12-25 09:43:04,487 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-25 09:43:04,488 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:43:13,422 [Worker-27] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/pavel/Documents/workspace/maven-test01
+2017-12-25 09:43:13,422 [Worker-27] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -s /Users/pavel/Documents/java/apache-maven-3.5.0/conf/settings.xml test
+2017-12-25 09:45:30,038 [Worker-27] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/pavel/Documents/workspace/maven-test01
+2017-12-25 09:45:30,039 [Worker-27] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -s /Users/pavel/Documents/java/apache-maven-3.5.0/conf/settings.xml package
+2017-12-25 09:45:43,144 [Worker-30] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:45:43,145 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:45:43,146 [Worker-30] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:45:43,147 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:45:58,449 [Worker-27] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/pavel/Documents/workspace/maven-test01
+2017-12-25 09:45:58,449 [Worker-27] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -s /Users/pavel/Documents/java/apache-maven-3.5.0/conf/settings.xml clean
+2017-12-25 09:46:00,872 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:46:00,873 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:46:00,874 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:46:00,875 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:46:12,620 [Worker-25] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/pavel/Documents/workspace/maven-test01
+2017-12-25 09:46:12,620 [Worker-25] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -s /Users/pavel/Documents/java/apache-maven-3.5.0/conf/settings.xml test
+2017-12-25 09:46:17,389 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:46:17,389 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:46:17,390 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:46:17,391 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:46:35,848 [Worker-27] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/pavel/Documents/workspace/maven-test01
+2017-12-25 09:46:35,848 [Worker-27] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -s /Users/pavel/Documents/java/apache-maven-3.5.0/conf/settings.xml package
+2017-12-25 09:46:47,623 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:46:47,623 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:46:47,625 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:46:47,625 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:52:07,097 [Worker-31] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:maven-test02:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/maven-test02/pom.xml.
+2017-12-25 09:52:07,128 [Worker-31] WARN  o.e.m.j.i.AbstractJavaProjectConfigurator - Could not determine source level, using default 
+2017-12-25 09:52:07,129 [Worker-31] WARN  o.e.m.j.i.AbstractJavaProjectConfigurator - Could not determine target level, using default 
+2017-12-25 09:52:07,132 [Worker-31] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /maven-test02/src/main/java
+2017-12-25 09:52:07,132 [Worker-31] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /maven-test02/src/main/resources
+2017-12-25 09:52:07,133 [Worker-31] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /maven-test02/src/test/java
+2017-12-25 09:52:07,133 [Worker-31] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /maven-test02/src/test/resources
+2017-12-25 09:52:07,405 [Worker-33] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:maven-test02:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/maven-test02/pom.xml.
+2017-12-25 09:52:07,451 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:52:07,451 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:52:07,452 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:52:07,452 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:52:50,129 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:52:50,130 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:52:50,131 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:52:50,132 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:53:32,032 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:53:32,033 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:53:32,035 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:53:32,036 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:53:51,145 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:53:51,145 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:53:51,147 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:53:51,147 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:54:11,738 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:54:11,739 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:54:11,740 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:54:11,741 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:54:20,943 [Worker-39] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:54:20,944 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:54:20,945 [Worker-39] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:54:20,945 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:54:31,690 [Worker-32] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/pavel/Documents/workspace/maven-test01
+2017-12-25 09:54:31,691 [Worker-32] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -s /Users/pavel/Documents/java/apache-maven-3.5.0/conf/settings.xml package
+2017-12-25 09:54:40,263 [Worker-35] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/pavel/Documents/workspace/maven-test01
+2017-12-25 09:54:40,264 [Worker-35] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -s /Users/pavel/Documents/java/apache-maven-3.5.0/conf/settings.xml install
+2017-12-25 09:56:09,610 [Worker-36] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:maven-test02:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/maven-test02/pom.xml.
+2017-12-25 09:56:09,652 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:56:09,652 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:56:09,653 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:56:09,653 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:56:10,820 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:56:10,821 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:56:10,822 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:56:10,823 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:56:55,619 [Worker-39] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:56:55,620 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:56:55,621 [Worker-39] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:56:55,622 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:57:08,698 [Worker-32] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:maven-test02:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/maven-test02/pom.xml.
+2017-12-25 09:57:08,729 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:57:08,730 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:57:08,731 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:57:08,732 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:57:19,729 [Worker-38] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:maven-test02:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/maven-test02/pom.xml.
+2017-12-25 09:57:19,784 [Worker-38] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:57:19,784 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:57:19,785 [Worker-38] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:57:19,786 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:57:20,920 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:57:20,921 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:57:20,922 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:57:20,923 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:57:26,384 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:57:26,384 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:57:26,385 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:57:26,385 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:57:48,702 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:57:48,702 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:57:48,704 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:57:48,704 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:57:59,394 [Worker-39] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:57:59,394 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:57:59,395 [Worker-39] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:57:59,396 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:57:59,515 [Worker-31] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:maven-test02:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/maven-test02/pom.xml.
+2017-12-25 09:57:59,566 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:57:59,567 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:57:59,568 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:57:59,569 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:58:05,244 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:58:05,245 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:58:05,246 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:58:05,246 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:58:11,967 [Worker-35] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/pavel/Documents/workspace/maven-test02
+2017-12-25 09:58:11,967 [Worker-35] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -s /Users/pavel/Documents/java/apache-maven-3.5.0/conf/settings.xml test
+2017-12-25 09:58:16,664 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:58:16,665 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:58:16,666 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:58:16,667 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:59:04,537 [Worker-41] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:59:04,538 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:59:04,539 [Worker-41] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:59:04,539 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:59:12,656 [Worker-33] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/pavel/Documents/workspace/maven-test02
+2017-12-25 09:59:12,657 [Worker-33] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -s /Users/pavel/Documents/java/apache-maven-3.5.0/conf/settings.xml test
+2017-12-25 09:59:16,620 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:59:16,621 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 09:59:16,622 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 09:59:16,622 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 10:00:26,034 [Worker-37] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/pavel/Documents/workspace/maven-test02
+2017-12-25 10:00:26,034 [Worker-37] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -s /Users/pavel/Documents/java/apache-maven-3.5.0/conf/settings.xml test
+2017-12-25 10:00:30,249 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 10:00:30,250 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 10:00:30,252 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 10:00:30,253 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 10:03:41,821 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 10:03:41,822 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 10:03:41,823 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 10:03:41,823 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 10:04:01,679 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 10:04:01,679 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 10:04:01,680 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 10:04:01,681 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 10:04:17,080 [Worker-40] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/pavel/Documents/workspace/maven-test02
+2017-12-25 10:04:17,080 [Worker-40] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -s /Users/pavel/Documents/java/apache-maven-3.5.0/conf/settings.xml test
+2017-12-25 10:04:21,030 [Worker-44] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 10:04:21,031 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 10:04:21,032 [Worker-44] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 10:04:21,033 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 14:15:18,967 [Worker-51] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:maven-test03:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/maven-test03/pom.xml.
+2017-12-25 14:15:19,003 [Worker-51] WARN  o.e.m.j.i.AbstractJavaProjectConfigurator - Could not determine source level, using default 
+2017-12-25 14:15:19,004 [Worker-51] WARN  o.e.m.j.i.AbstractJavaProjectConfigurator - Could not determine target level, using default 
+2017-12-25 14:15:19,008 [Worker-51] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /maven-test03/src/main/java
+2017-12-25 14:15:19,008 [Worker-51] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /maven-test03/src/main/resources
+2017-12-25 14:15:19,008 [Worker-51] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /maven-test03/src/test/java
+2017-12-25 14:15:19,008 [Worker-51] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /maven-test03/src/test/resources
+2017-12-25 14:15:19,719 [Worker-48] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:maven-test03:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/maven-test03/pom.xml.
+2017-12-25 14:15:19,771 [Worker-48] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 14:15:19,772 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 14:15:19,773 [Worker-48] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 14:15:19,774 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 14:15:31,594 [Worker-53] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:maven-test03:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/maven-test03/pom.xml.
+2017-12-25 14:15:31,636 [Worker-53] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 14:15:31,636 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 14:15:31,637 [Worker-53] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 14:15:31,638 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 14:15:47,135 [Worker-54] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:maven-test03:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/maven-test03/pom.xml.
+2017-12-25 14:15:47,167 [Worker-54] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 14:15:47,168 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 14:15:47,169 [Worker-54] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 14:15:47,169 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 14:16:00,284 [Worker-55] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:maven-test03:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/maven-test03/pom.xml.
+2017-12-25 14:16:00,321 [Worker-55] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 14:16:00,322 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 14:16:00,323 [Worker-55] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 14:16:00,323 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 14:16:01,479 [Worker-48] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 14:16:01,480 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 14:16:01,481 [Worker-48] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 14:16:01,481 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 14:16:04,651 [Worker-42] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:maven-test03:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/maven-test03/pom.xml.
+2017-12-25 14:16:04,682 [Worker-42] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 14:16:04,682 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 14:16:04,683 [Worker-42] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 14:16:04,684 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 14:16:08,485 [Worker-52] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:maven-test03:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/maven-test03/pom.xml.
+2017-12-25 14:16:08,517 [Worker-52] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 14:16:08,518 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 14:16:08,519 [Worker-52] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 14:16:08,519 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 14:16:47,871 [Worker-53] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 14:16:47,872 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 14:16:47,875 [Worker-53] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 14:16:47,876 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 14:17:18,693 [Worker-48] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 14:17:18,694 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 14:17:18,696 [Worker-48] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 14:17:18,697 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 14:19:19,010 [Worker-53] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 14:19:19,012 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 14:19:19,014 [Worker-53] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 14:19:19,014 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 15:02:24,029 [Worker-61] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.cblue:maven-base:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/maven-base/pom.xml.
+2017-12-25 15:02:24,053 [Worker-61] ERROR org.eclipse.m2e.core.MavenPlugin - 
+org.eclipse.jdt.core.JavaModelException: maven-base does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:495) ~[org.eclipse.jdt.core_3.7.0.v_B61.jar:na]
+	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2305) ~[org.eclipse.jdt.core_3.7.0.v_B61.jar:na]
+	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:1890) ~[org.eclipse.jdt.core_3.7.0.v_B61.jar:na]
+	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:1912) ~[org.eclipse.jdt.core_3.7.0.v_B61.jar:na]
+	at org.eclipse.m2e.core.MavenResourceProcessor.doCheck(MavenResourceProcessor.java:94) [org.eclipse.m2e.core_1.0.0.me201110301321.jar:na]
+	at org.eclipse.m2e.core.MavenResourceProcessor.checkforOlderMaven(MavenResourceProcessor.java:69) [org.eclipse.m2e.core_1.0.0.me201110301321.jar:na]
+	at org.eclipse.m2e.core.ui.internal.wizards.AbstractCreateMavenProjectsOperation.run(AbstractCreateMavenProjectsOperation.java:84) [org.eclipse.m2e.core.ui_1.0.0.me201110311918.jar:na]
+	at org.eclipse.m2e.core.ui.internal.wizards.AbstactCreateMavenProjectJob.runInWorkspace(AbstactCreateMavenProjectJob.java:49) [org.eclipse.m2e.core.ui_1.0.0.me201110311918.jar:na]
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38) [org.eclipse.core.resources_3.7.100.v20110510-0712.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.100.v20110404.jar:na]
+2017-12-25 15:02:24,697 [Worker-58] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.cblue:maven-base:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/maven-base/pom.xml.
+2017-12-25 15:02:46,132 [Worker-59] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:maven-test01:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/maven-test01/pom.xml.
+2017-12-25 15:02:46,150 [Worker-59] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:maven-test02:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/maven-test02/pom.xml.
+2017-12-25 15:02:46,165 [Worker-59] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:maven-test03:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/maven-test03/pom.xml.
+2017-12-25 15:02:46,311 [Worker-59] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 15:02:46,312 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 15:02:46,314 [Worker-59] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 15:02:46,314 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 15:02:46,320 [Worker-59] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 15:02:46,321 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 15:02:46,322 [Worker-59] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 15:02:46,323 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 15:02:46,333 [Worker-59] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 15:02:46,333 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 15:02:46,335 [Worker-59] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 15:02:46,336 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 15:02:47,512 [Worker-62] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 15:02:47,513 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 15:02:47,515 [Worker-62] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 15:02:47,515 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 15:02:53,564 [Worker-61] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:maven-test01:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/maven-test01/pom.xml.
+2017-12-25 15:02:53,598 [Worker-61] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 15:02:53,599 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 15:02:53,600 [Worker-61] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 15:02:53,601 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 15:03:00,610 [Worker-58] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.cblue:maven-base:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/maven-base/pom.xml.
+2017-12-25 15:03:31,618 [Worker-63] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:maven-test02:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/maven-test02/pom.xml.
+2017-12-25 15:03:31,624 [Worker-63] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:maven-test03:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/maven-test03/pom.xml.
+2017-12-25 15:03:31,693 [Worker-63] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 15:03:31,694 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 15:03:31,696 [Worker-63] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 15:03:31,696 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 15:03:31,703 [Worker-63] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 15:03:31,704 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 15:03:31,706 [Worker-63] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 15:03:31,706 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 15:03:32,818 [Worker-63] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 15:03:32,818 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 15:03:32,820 [Worker-63] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 15:03:32,821 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 15:04:11,757 [Worker-58] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:maven-test01:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/maven-test01/pom.xml.
+2017-12-25 15:04:11,770 [Worker-58] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:maven-test02:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/maven-test02/pom.xml.
+2017-12-25 15:04:11,780 [Worker-58] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:maven-test03:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/maven-test03/pom.xml.
+2017-12-25 15:04:11,868 [Worker-58] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 15:04:11,868 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 15:04:11,870 [Worker-58] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 15:04:11,870 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 15:04:11,875 [Worker-58] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 15:04:11,876 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 15:04:11,877 [Worker-58] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 15:04:11,878 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 15:04:11,883 [Worker-58] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 15:04:11,884 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 15:04:11,885 [Worker-58] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 15:04:11,886 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 15:04:12,977 [Worker-64] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 15:04:12,977 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 15:04:12,979 [Worker-64] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 15:04:12,979 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 15:04:25,832 [Worker-62] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:maven-test02:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/maven-test02/pom.xml.
+2017-12-25 15:04:25,869 [Worker-62] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 15:04:25,870 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 15:04:25,871 [Worker-62] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 15:04:25,872 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 15:04:36,927 [Worker-61] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:maven-test02:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/maven-test02/pom.xml.
+2017-12-25 15:04:36,953 [Worker-61] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 15:04:36,954 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 15:04:36,954 [Worker-61] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 15:04:36,955 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 15:04:38,139 [Worker-59] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:maven-test02:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/maven-test02/pom.xml.
+2017-12-25 15:04:38,178 [Worker-59] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 15:04:38,179 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 15:04:38,180 [Worker-59] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 15:04:38,181 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 15:04:40,646 [Worker-61] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:maven-test02:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/maven-test02/pom.xml.
+2017-12-25 15:04:40,657 [Worker-61] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:maven-test03:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/maven-test03/pom.xml.
+2017-12-25 15:04:40,738 [Worker-61] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 15:04:40,738 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 15:04:40,740 [Worker-61] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 15:04:40,741 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 15:04:40,747 [Worker-61] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 15:04:40,748 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 15:04:40,749 [Worker-61] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 15:04:40,750 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 15:04:41,907 [Worker-63] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 15:04:41,908 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 15:04:41,909 [Worker-63] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 15:04:41,909 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 15:04:54,341 [Worker-62] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:maven-test03:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/maven-test03/pom.xml.
+2017-12-25 15:04:54,396 [Worker-62] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 15:04:54,397 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 15:04:54,398 [Worker-62] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 15:04:54,398 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 15:04:55,519 [Worker-59] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 15:04:55,519 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 15:04:55,520 [Worker-59] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 15:04:55,521 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 15:05:04,789 [Worker-61] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:maven-test03:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/maven-test03/pom.xml.
+2017-12-25 15:05:04,823 [Worker-61] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 15:05:04,823 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 15:05:04,824 [Worker-61] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 15:05:04,825 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 16:47:18,251 [Worker-64] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:maven-web:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/maven-web/pom.xml.
+2017-12-25 16:47:18,301 [Worker-64] WARN  o.e.m.j.i.AbstractJavaProjectConfigurator - Could not determine source level, using default 
+2017-12-25 16:47:18,309 [Worker-64] WARN  o.e.m.j.i.AbstractJavaProjectConfigurator - Could not determine target level, using default 
+2017-12-25 16:47:18,313 [Worker-64] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /maven-web/src/main/java
+2017-12-25 16:47:18,313 [Worker-64] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /maven-web/src/main/resources
+2017-12-25 16:47:18,314 [Worker-64] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /maven-web/src/test/java
+2017-12-25 16:47:18,314 [Worker-64] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /maven-web/src/test/resources
+2017-12-25 16:47:20,369 [Worker-68] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:maven-web:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/maven-web/pom.xml.
+2017-12-25 16:47:20,950 [Worker-68] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 16:47:20,951 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 16:47:20,952 [Worker-68] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 16:47:20,953 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 16:47:59,127 [Worker-68] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:maven-web:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/maven-web/pom.xml.
+2017-12-25 16:47:59,163 [Worker-68] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 16:47:59,163 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 16:47:59,165 [Worker-68] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 16:47:59,166 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 16:50:02,412 [New I/O client worker #10-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/tomcat/maven/tomcat7-maven-plugin/maven-metadata.xml
+2017-12-25 16:50:02,413 [New I/O client worker #10-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/tomcat/maven/tomcat7-maven-plugin/maven-metadata.xml
+2017-12-25 16:50:02,757 [Worker-71] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:maven-web:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/maven-web/pom.xml.
+2017-12-25 16:50:02,797 [Worker-71] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 16:50:02,799 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 16:50:02,801 [Worker-71] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 16:50:02,801 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 16:50:55,778 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2017-12-25 16:56:09,678 [Worker-67] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/pavel/Documents/workspace/shop-manager-web
+2017-12-25 16:56:09,678 [Worker-67] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -s /Users/pavel/Documents/java/apache-maven-3.5.0/conf/settings.xml tomcat:run
+2017-12-25 16:58:20,766 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2017-12-25 16:58:27,232 [Worker-67] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/pavel/Documents/workspace/maven-web
+2017-12-25 16:58:27,232 [Worker-67] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -s /Users/pavel/Documents/java/apache-maven-3.5.0/conf/settings.xml tomcat:run
+2017-12-25 16:59:48,189 [Worker-73] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/pavel/Documents/workspace/maven-web
+2017-12-25 16:59:48,189 [Worker-73] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -s /Users/pavel/Documents/java/apache-maven-3.5.0/conf/settings.xml tomcat:run
+2017-12-25 17:00:30,917 [Worker-80] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:maven-web:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/maven-web/pom.xml.
+2017-12-25 17:00:30,968 [Worker-80] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 17:00:30,970 [Worker-80] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 17:00:30,971 [Worker-80] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 17:00:30,972 [Worker-80] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 17:00:34,540 [Worker-89] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/pavel/Documents/workspace/maven-web
+2017-12-25 17:00:34,540 [Worker-89] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -s /Users/pavel/Documents/java/apache-maven-3.5.0/conf/settings.xml tomcat:run
+2017-12-25 17:01:09,694 [Worker-87] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 17:01:09,697 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-25 17:01:09,698 [Worker-87] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-25 17:01:09,699 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource

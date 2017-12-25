@@ -2,19 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="245" key="DIALOG_WIDTH"/>
-		<item value="284" key="DIALOG_Y_ORIGIN"/>
+		<item value="86" key="DIALOG_Y_ORIGIN"/>
+		<item value="738" key="DIALOG_X_ORIGIN"/>
 		<item value="379" key="DIALOG_HEIGHT"/>
-		<item value="601" key="DIALOG_X_ORIGIN"/>
 		<item value="1|.Helvetica Neue DeskInterface|11.0|0|COCOA|1|.HelveticaNeueDeskInterface-Regular" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="true" key="wrap"/>
-		<item value="false" key="isRegEx"/>
 		<item value="false" key="casesensitive"/>
+		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="dubbo" key="selection"/>
+		<item value="" key="selection"/>
 		<list key="findhistory">
+			<item value="page"/>
 			<item value="dubbo"/>
 			<item value="dubbo&apos;"/>
 			<item value="dubbi"/>
@@ -22,7 +23,6 @@
 			<item value="son"/>
 			<item value="json"/>
 			<item value="templatelist"/>
-			<item value="pageForm"/>
 		</list>
 		<list key="replacehistory">
 		</list>

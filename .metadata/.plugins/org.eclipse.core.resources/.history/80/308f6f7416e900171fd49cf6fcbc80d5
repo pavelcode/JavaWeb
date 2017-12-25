@@ -1,0 +1,8 @@
+package com.cblue.maven;
+
+public class Hello {
+
+	public static void main(String[] args) {
+		HelloMaven helloMaven = new HelloMaven();
+	}
+}
