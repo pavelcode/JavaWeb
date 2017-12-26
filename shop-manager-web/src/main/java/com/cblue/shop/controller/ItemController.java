@@ -1,5 +1,7 @@
 package com.cblue.shop.controller;
 
+import main.java.com.cblue.common.pojo.EasyUIDataGridResult;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -24,6 +26,14 @@ public class ItemController {
 	public TbItem getItemById(@PathVariable Long itemId) {
 		TbItem tbItem = itemService.getItemById(itemId);
 		return tbItem;
+	}
+	
+	@RequestMapping("/item/list")  //在easyui访问数据时，确定的访问地址
+	@ResponseBody  //返回的类型是json格式
+	public EasyUIDataGridResult getItemList(Integer page, Integer rows) {  //page,rows是easyui默认提供的分页参数
+		//调用服务查询商品列表
+		EasyUIDataGridResult result = itemService.getItemListByPage(page, rows);
+		return result;
 	}
 
 }

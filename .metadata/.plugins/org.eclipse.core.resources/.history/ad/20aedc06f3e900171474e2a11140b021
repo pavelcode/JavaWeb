@@ -1,0 +1,8 @@
+package main.java.com.cblue.common.pojo;
+
+public class EasyUIDataGrid {
+	
+	private Long total;
+	private List rows;
+
+}

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="72" version="2.0">
+<workbench progressCount="15" version="2.0">
 <workbenchAdvisor/>
 <window height="717" maximized="true" width="1280" x="-4" y="65">
 <fastViewData fastViewLocation="1024"/>
@@ -14,17 +14,17 @@
 <coolItem id="com.genuitec.eclipse.j2eedt.core.ejb" itemType="typeToolBarContribution" x="40" y="22"/>
 <coolItem id="com.genuitec.eclipse.uml.actions" itemType="typeToolBarContribution" x="54" y="22"/>
 <coolItem id="com.genuitec.eclipse.web20.actionset" itemType="typeToolBarContribution" x="32" y="22"/>
-<coolItem id="com.genuitec.eclipse.webdesigner3.editors.jsp" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="com.genuitec.eclipse.webdesigner3.editors.jsp" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="com.genuitec.eclipse.ws.xfire.actions" itemType="typeToolBarContribution" x="70" y="22"/>
 <coolItem id="com.genuitec.myeclipse.actions.deploytools" itemType="typeToolBarContribution" x="84" y="22"/>
 <coolItem id="com.genuitec.myeclipse.actions.desktop" itemType="typeToolBarContribution" x="54" y="22"/>
 <coolItem id="com.genuitec.myeclipse.actions.reporting" itemType="typeToolBarContribution" x="62" y="22"/>
 <coolItem id="com.genuitec.myeclipse.actions.screencapture" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="130" y="22"/>
-<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="62" y="22"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="84" y="22"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="54" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="98" y="22"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="54" y="22"/>
 <coolItem id="org.jboss.tools.common.propertieseditor.PropertiesCompoundEditor" itemType="typePlaceholder" x="32" y="22"/>
@@ -34,13 +34,13 @@
 <coolItem id="org.eclipse.wst.xsd.ui.internal.editor.InternalXSDMultiPageEditor" itemType="typePlaceholder" x="93" y="22"/>
 <coolItem id="com.genuitec.eclipse.sqlexplorer.editors.SQLEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.jboss.tools.common.model.ui.editor.EditorPartWrapper" itemType="typePlaceholder" x="32" y="22"/>
-<coolItem id="org.eclipse.m2e.editor.MavenPomEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.m2e.editor.MavenPomEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="com.genuitec.eclipse.springframework.springconfigeditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="com.genuitec.eclipse.struts2.editor" itemType="typePlaceholder" x="315" y="22"/>
 <coolItem id="org.jboss.tools.flow.jpdl4.multipage.editors.MultiPageEditor" itemType="typePlaceholder" x="249" y="22"/>
 <coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="com.genuitec.eclipse.hibernate.editors.HibernateConfigXMLEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="UserSeparator" itemType="typeSeparator"/>
@@ -51,10 +51,105 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+<part id="7"/>
+<part id="8"/>
+<part id="9"/>
+<part id="10"/>
+<part id="11"/>
+<part id="12"/>
+<part id="13"/>
+<part id="14"/>
+<part id="15"/>
+<part id="16"/>
+<part id="17"/>
+<part id="18"/>
+<part id="19"/>
+<part id="20"/>
+</presentation>
 </folder>
 </info>
 </editorArea>
+<editor id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" partName="shop-manager-web/pom.xml" path="/Users/pavel/Documents/workspace/shop-manager-web/pom.xml" title="shop-manager-web/pom.xml" tooltip="shop-manager-web/pom.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/shop-manager-web/pom.xml"/>
+</editor>
+<editor id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="item-list.jsp" partName="item-list.jsp" path="/Users/pavel/Documents/workspace/shop-manager-web/src/main/webapp/WEB-INF/jsp/item-list.jsp" title="item-list.jsp" tooltip="shop-manager-web/src/main/webapp/WEB-INF/jsp/item-list.jsp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/shop-manager-web/src/main/webapp/WEB-INF/jsp/item-list.jsp"/>
+</editor>
+<editor id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="index.jsp" partName="index.jsp" path="/Users/pavel/Documents/workspace/shop-manager-web/src/main/webapp/WEB-INF/jsp/index.jsp" title="index.jsp" tooltip="shop-manager-web/src/main/webapp/WEB-INF/jsp/index.jsp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/shop-manager-web/src/main/webapp/WEB-INF/jsp/index.jsp"/>
+</editor>
+<editor id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="SqlMapConfig.xml" partName="SqlMapConfig.xml" path="/Users/pavel/Documents/workspace/Mybatis/config/SqlMapConfig.xml" title="SqlMapConfig.xml" tooltip="Mybatis/config/SqlMapConfig.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Mybatis/config/SqlMapConfig.xml"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Page.java" partName="Page.java" path="/Users/pavel/Documents/workspace/pagehelper-fix/src/main/java/com/github/pagehelper/Page.java" title="Page.java" tooltip="pagehelper-fix/src/main/java/com/github/pagehelper/Page.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/pagehelper-fix/src/main/java/com/github/pagehelper/Page.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1314" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PageHelper.java" partName="PageHelper.java" path="/Users/pavel/Documents/workspace/pagehelper-fix/src/main/java/com/github/pagehelper/PageHelper.java" title="PageHelper.java" tooltip="pagehelper-fix/src/main/java/com/github/pagehelper/PageHelper.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/pagehelper-fix/src/main/java/com/github/pagehelper/PageHelper.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="10" selectionOffset="1860" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PageInfo.java" partName="PageInfo.java" path="/Users/pavel/Documents/workspace/pagehelper-fix/src/main/java/com/github/pagehelper/PageInfo.java" title="PageInfo.java" tooltip="pagehelper-fix/src/main/java/com/github/pagehelper/PageInfo.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/pagehelper-fix/src/main/java/com/github/pagehelper/PageInfo.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="4891"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SqlParser.java" partName="SqlParser.java" path="/Users/pavel/Documents/workspace/pagehelper-fix/src/main/java/com/github/pagehelper/SqlParser.java" title="SqlParser.java" tooltip="pagehelper-fix/src/main/java/com/github/pagehelper/SqlParser.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/pagehelper-fix/src/main/java/com/github/pagehelper/SqlParser.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="4093"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SqlUtil.java" partName="SqlUtil.java" path="/Users/pavel/Documents/workspace/pagehelper-fix/src/main/java/com/github/pagehelper/SqlUtil.java" title="SqlUtil.java" tooltip="pagehelper-fix/src/main/java/com/github/pagehelper/SqlUtil.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/pagehelper-fix/src/main/java/com/github/pagehelper/SqlUtil.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4" selectionTopPixel="10268"/>
+</editor>
+<editor id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" partName="pagehelper-fix/pom.xml" path="/Users/pavel/Documents/workspace/pagehelper-fix/pom.xml" title="pagehelper-fix/pom.xml" tooltip="pagehelper-fix/pom.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/pagehelper-fix/pom.xml"/>
+</editor>
+<editor id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" partName="shop-parent/pom.xml" path="/Users/pavel/Documents/workspace/shop-parent/pom.xml" title="shop-parent/pom.xml" tooltip="shop-parent/pom.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/shop-parent/pom.xml"/>
+</editor>
+<editor id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" partName="shop-manager-service/pom.xml" path="/Users/pavel/Documents/workspace/shop-manager/shop-manager-service/pom.xml" title="shop-manager-service/pom.xml" tooltip="shop-manager-service/pom.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/shop-manager-service/pom.xml"/>
+</editor>
+<editor id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" partName="shop-manager/pom.xml" path="/Users/pavel/Documents/workspace/shop-manager/pom.xml" title="shop-manager/pom.xml" tooltip="shop-manager/pom.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/shop-manager/pom.xml"/>
+</editor>
+<editor id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" partName="shop-manager-dao/pom.xml" path="/Users/pavel/Documents/workspace/shop-manager/shop-manager-dao/pom.xml" title="shop-manager-dao/pom.xml" tooltip="shop-manager-dao/pom.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/shop-manager-dao/pom.xml"/>
+</editor>
+<editor id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="SqlMapConfig.xml" partName="SqlMapConfig.xml" path="/Users/pavel/Documents/workspace/shop-manager/shop-manager-service/src/main/resources/mybatis/SqlMapConfig.xml" title="SqlMapConfig.xml" tooltip="shop-manager-service/src/main/resources/mybatis/SqlMapConfig.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/shop-manager-service/src/main/resources/mybatis/SqlMapConfig.xml"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PageHelperTest.java" partName="PageHelperTest.java" path="/Users/pavel/Documents/workspace/shop-manager/shop-manager-service/src/test/java/com/cblue/pagehelper/PageHelperTest.java" title="PageHelperTest.java" tooltip="shop-manager-service/src/test/java/com/cblue/pagehelper/PageHelperTest.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/shop-manager-service/src/test/java/com/cblue/pagehelper/PageHelperTest.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="643" selectionOffset="482" selectionTopPixel="126"/>
+</editor>
+<editor id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" partName="shop-common/pom.xml" path="/Users/pavel/Documents/workspace/shop-common/pom.xml" title="shop-common/pom.xml" tooltip="shop-common/pom.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/shop-common/pom.xml"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EasyUIDataGridResult.java" partName="EasyUIDataGridResult.java" path="/Users/pavel/Documents/workspace/shop-common/src/main/java/com/cblue/common/pojo/EasyUIDataGridResult.java" title="EasyUIDataGridResult.java" tooltip="shop-common/src/main/java/com/cblue/common/pojo/EasyUIDataGridResult.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/shop-common/src/main/java/com/cblue/common/pojo/EasyUIDataGridResult.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="101" selectionOffset="95" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ItemService.java" partName="ItemService.java" path="/Users/pavel/Documents/workspace/shop-manager/shop-manager-interface/src/main/java/com/cblue/shop/service/ItemService.java" title="ItemService.java" tooltip="shop-manager-interface/src/main/java/com/cblue/shop/service/ItemService.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/shop-manager-interface/src/main/java/com/cblue/shop/service/ItemService.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="70" selectionOffset="288" selectionTopPixel="65"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ItemServiceImpl.java" partName="ItemServiceImpl.java" path="/Users/pavel/Documents/workspace/shop-manager/shop-manager-service/src/main/java/com/cblue/shop/service/impl/ItemServiceImpl.java" title="ItemServiceImpl.java" tooltip="shop-manager-service/src/main/java/com/cblue/shop/service/impl/ItemServiceImpl.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/shop-manager-service/src/main/java/com/cblue/shop/service/impl/ItemServiceImpl.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="546" selectionOffset="1092" selectionTopPixel="616"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ItemController.java" partName="ItemController.java" path="/Users/pavel/Documents/workspace/shop-manager-web/src/main/java/com/cblue/shop/controller/ItemController.java" title="ItemController.java" tooltip="shop-manager-web/src/main/java/com/cblue/shop/controller/ItemController.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/shop-manager-web/src/main/java/com/cblue/shop/controller/ItemController.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="294" selectionOffset="822" selectionTopPixel="217"/>
+</editor>
 </editors>
 <views>
 <view id="com.genuitec.eclipse.ui.HTMLView" partName="Web Browser"/>
@@ -87,8 +182,7 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings (39 items)"/>
-<category IMemento.internal.id="Errors"/>
+<category IMemento.internal.id="Warnings (100 of 123 items)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="384" org.eclipse.ui.ide.resourceField="174" org.eclipse.ui.ide.severityAndDescriptionField="718"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -102,7 +196,7 @@
 <viewState/>
 </view>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
-<viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="">
+<viewState group_libraries="1" layout="1" linkWithEditor="0" rootMode="1" workingSetName="">
 <customFilters userDefinedPatternsEnabled="false">
 <xmlDefinedFilters>
 <child filterId="org.eclipse.jdt.ui.PackageExplorer.LibraryFilter" isEnabled="false"/>
@@ -134,7 +228,7 @@
 <view id="org.eclipse.jdt.ui.SourceView" partName="Declaration"/>
 <view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.genuitec.myeclipse.perspective.MyEclipsePerspectiveFactory" id="com.genuitec.myeclipse.perspective.myeclipseperspective" label="MyEclipse Java Enterprise"/>
 <alwaysOnActionSet id="com.genuitec.myeclipse.actions.deploytools"/>
@@ -391,7 +485,6 @@
 <view id="org.eclipse.ui.views.PropertySheet"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.jdt.ui.PackageExplorer"/>
-<view id="org.jboss.tools.flow.jpdl4.details"/>
 <fastViewBars/>
 <layout>
 <mainWindow>
@@ -416,7 +509,7 @@
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.23640662" ratioLeft="300" ratioRight="969" relationship="2" relative="left"/>
 <info folder="true" part="bottom" ratio="0.5993322" ratioLeft="359" ratioRight="240" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
 <page content="org.eclipse.jdt.ui.SourceView" label="Declaration"/>
@@ -435,11 +528,9 @@
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@a8a4f89" ratio="0.84968686" ratioLeft="814" ratioRight="144" relationship="2" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.jboss.tools.flow.jpdl4.details" appearance="2" expanded="2">
-<page content="org.jboss.tools.flow.jpdl4.details" label="Details (jBPM 4)"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
+<folder appearance="2" expanded="2">
+<page content="org.jboss.tools.flow.jpdl4.details" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info folder="true" part="right" ratio="0.4989775" ratioLeft="244" ratioRight="245" relationship="4" relative="org.eclipse.ui.internal.ViewStack@a8a4f89">
@@ -542,32 +633,23 @@
 <view id="org.eclipse.debug.ui.ExpressionView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <fastViewBars/>
-<layout>
-<mainWindow>
-<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">
-<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
 <page content="com.genuitec.eclipse.ast.deploy.core.serverview" label="Servers"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.PackageExplorer" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
 <page content="org.eclipse.wst.server.ui.ServersView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="954" ratioRight="318" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="954" ratioRight="318" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.74876034" ratioLeft="453" ratioRight="152" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
-<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.74876034" ratioLeft="453" ratioRight="152" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
@@ -578,32 +660,25 @@
 <page content="org.eclipse.jdt.debug.ui.DisplayView" label="LabelNotFound"/>
 <page content="org.eclipse.search.SearchResultView" label="LabelNotFound"/>
 <page content="org.eclipse.wst.xsl.jaxp.debug.ui.view1" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.44812363" ratioLeft="203" ratioRight="250" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
-<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.75" ratioLeft="954" ratioRight="318" relationship="2" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.75" ratioLeft="954" ratioRight="318" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
 <page content="org.eclipse.atf.mozilla.ide.ui.views.inspector" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="636" ratioRight="636" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">
-<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="636" ratioRight="636" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
 <page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
 <page content="org.eclipse.debug.ui.ExpressionView" label="Expressions"/>
 <page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
 <page content="org.eclipse.atf.mozilla.ide.debug.ui.scriptview" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 <part id="2"/>
 </presentation>
@@ -614,7 +689,123 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" path="/maven-web/pom.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" path="/maven-test01/pom.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" path="/maven-base/pom.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" path="/shop-manager-web/pom.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.jsp" path="/shop-manager-web/src/main/webapp/WEB-INF/jsp/item-list.jsp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.jsp" path="/shop-manager-web/src/main/webapp/WEB-INF/jsp/index.jsp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" path="/Mybatis/config/SqlMapConfig.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/pagehelper-fix/src/main/java/com/github/pagehelper/Page.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/pagehelper-fix/src/main/java/com/github/pagehelper/PageHelper.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/pagehelper-fix/src/main/java/com/github/pagehelper/PageInfo.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/pagehelper-fix/src/main/java/com/github/pagehelper/SqlParser.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/pagehelper-fix/src/main/java/com/github/pagehelper/SqlUtil.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" path="/pagehelper-fix/pom.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" path="/shop-parent/pom.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" path="/shop-manager-service/pom.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" path="/shop-manager/pom.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" path="/shop-manager-dao/pom.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" path="/shop-manager-service/src/main/resources/mybatis/SqlMapConfig.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/shop-manager-service/src/test/java/com/cblue/pagehelper/PageHelperTest.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" path="/shop-common/pom.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/shop-common/src/main/java/com/cblue/common/pojo/EasyUIDataGrid.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/shop-common/src/main/java/com/cblue/common/pojo/EasyUIDataGridResult.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/shop-manager-interface/src/main/java/com/cblue/shop/service/ItemService.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/shop-manager-service/src/main/java/com/cblue/shop/service/impl/ItemServiceImpl.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/shop-manager-web/src/main/java/com/cblue/shop/controller/ItemController.java"/>
+</editors>
+<item historyLabel="maven-web/pom.xml" index="0"/>
+<item historyLabel="maven-test01/pom.xml" index="1"/>
+<item historyLabel="maven-base/pom.xml" index="2"/>
+<item historyLabel="maven-test01/pom.xml" index="1"/>
+<item historyLabel="maven-base/pom.xml" index="2"/>
+<item historyLabel="maven-web/pom.xml" index="0"/>
+<item historyLabel="maven-base/pom.xml" index="2"/>
+<item historyLabel="maven-web/pom.xml" index="0"/>
+<item historyLabel="shop-manager-web/pom.xml" index="3"/>
+<item historyLabel="item-list.jsp" index="4"/>
+<item historyLabel="index.jsp" index="5"/>
+<item historyLabel="item-list.jsp" index="4"/>
+<item historyLabel="SqlMapConfig.xml" index="6"/>
+<item historyLabel="Page.java" index="7">
+<position info="not_deleted" x="1314" y="0"/>
+</item>
+<item historyLabel="PageHelper.java" index="8">
+<position info="not_deleted" x="4" y="0"/>
+</item>
+<item historyLabel="PageInfo.java" index="9">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="SqlParser.java" index="10">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="SqlUtil.java" index="11">
+<position info="not_deleted" x="4" y="0"/>
+</item>
+<item historyLabel="pagehelper-fix/pom.xml" index="12"/>
+<item historyLabel="shop-parent/pom.xml" index="13"/>
+<item historyLabel="shop-manager-web/pom.xml" index="3"/>
+<item historyLabel="shop-manager-service/pom.xml" index="14"/>
+<item historyLabel="shop-manager/pom.xml" index="15"/>
+<item historyLabel="shop-manager-dao/pom.xml" index="16"/>
+<item historyLabel="shop-manager-service/pom.xml" index="14"/>
+<item historyLabel="SqlMapConfig.xml" index="17"/>
+<item historyLabel="PageHelper.java" index="8">
+<position info="not_deleted" x="1860" y="10"/>
+</item>
+<item historyLabel="SqlMapConfig.xml" index="17"/>
+<item historyLabel="PageHelperTest.java" index="18">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="PageHelperTest.java" index="18">
+<position info="not_deleted" x="477" y="0"/>
+</item>
+<item historyLabel="PageHelperTest.java" index="18">
+<position info="not_deleted" x="853" y="4"/>
+</item>
+<item historyLabel="PageHelperTest.java" index="18">
+<position info="not_deleted" x="949" y="8"/>
+</item>
+<item historyLabel="PageHelperTest.java" index="18">
+<position info="not_deleted" x="482" y="643"/>
+</item>
+<item historyLabel="shop-manager/pom.xml" index="15"/>
+<item historyLabel="shop-common/pom.xml" index="19"/>
+<item historyLabel="shop-manager/pom.xml" index="15"/>
+<item historyLabel="shop-common/pom.xml" index="19"/>
+<item historyLabel="shop-manager-service/pom.xml" index="14"/>
+<item historyLabel="shop-manager-web/pom.xml" index="3"/>
+<item historyLabel="EasyUIDataGrid.java" index="20">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="EasyUIDataGridResult.java" index="21">
+<position info="not_deleted" x="95" y="101"/>
+</item>
+<item historyLabel="ItemService.java" index="22">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="ItemService.java" index="22">
+<position info="not_deleted" x="288" y="70"/>
+</item>
+<item historyLabel="ItemServiceImpl.java" index="23">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="ItemServiceImpl.java" index="23">
+<position info="not_deleted" x="1092" y="546"/>
+</item>
+<item historyLabel="ItemService.java" index="22">
+<position info="not_deleted" x="288" y="70"/>
+</item>
+<item historyLabel="ItemController.java" index="24">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item active="true" historyLabel="ItemController.java" index="24">
+<position info="not_deleted" x="839" y="5"/>
+</item>
+</navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
@@ -639,29 +830,32 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="login.jsp" tooltip="shop-manager-web/src/main/webapp/WEB-INF/jsp/login.jsp">
-<persistable path="/shop-manager-web/src/main/webapp/WEB-INF/jsp/login.jsp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ItemController.java" tooltip="shop-manager-web/src/main/java/com/cblue/shop/controller/ItemController.java">
+<persistable path="/shop-manager-web/src/main/java/com/cblue/shop/controller/ItemController.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="index.jsp" tooltip="shop-manager-web/src/main/webapp/WEB-INF/jsp/index.jsp">
-<persistable path="/shop-manager-web/src/main/webapp/WEB-INF/jsp/index.jsp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ItemServiceImpl.java" tooltip="shop-manager-service/src/main/java/com/cblue/shop/service/impl/ItemServiceImpl.java">
+<persistable path="/shop-manager-service/src/main/java/com/cblue/shop/service/impl/ItemServiceImpl.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" tooltip="shop-manager-web/pom.xml">
-<persistable path="/shop-manager-web/pom.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ItemService.java" tooltip="shop-manager-interface/src/main/java/com/cblue/shop/service/ItemService.java">
+<persistable path="/shop-manager-interface/src/main/java/com/cblue/shop/service/ItemService.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="item-list.jsp" tooltip="shop-manager-web/src/main/webapp/WEB-INF/jsp/item-list.jsp">
-<persistable path="/shop-manager-web/src/main/webapp/WEB-INF/jsp/item-list.jsp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EasyUIDataGrid.java" tooltip="shop-common/src/main/java/com/cblue/common/pojo/EasyUIDataGrid.java">
+<persistable path="/shop-common/src/main/java/com/cblue/common/pojo/EasyUIDataGrid.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="item-add.jsp" tooltip="shop-manager-web/src/main/webapp/WEB-INF/jsp/item-add.jsp">
-<persistable path="/shop-manager-web/src/main/webapp/WEB-INF/jsp/item-add.jsp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" tooltip="shop-common/pom.xml">
+<persistable path="/shop-common/pom.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="index.jsp" tooltip="CBlueOA/WebRoot/WEB-INF/jsp/home/index.jsp">
-<persistable path="/CBlueOA/WebRoot/WEB-INF/jsp/home/index.jsp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PageHelperTest.java" tooltip="shop-manager-service/src/test/java/com/cblue/pagehelper/PageHelperTest.java">
+<persistable path="/shop-manager-service/src/test/java/com/cblue/pagehelper/PageHelperTest.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" tooltip="pagehelper/pom.xml">
-<persistable path="/pagehelper/pom.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="SqlMapConfig.xml" tooltip="shop-manager-service/src/main/resources/mybatis/SqlMapConfig.xml">
+<persistable path="/shop-manager-service/src/main/resources/mybatis/SqlMapConfig.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xsd.ui.internal.editor.InternalXSDMultiPageEditor" name="dubbo.xsd" tooltip="shop-manager-service/src/main/webapp/META-INF/dtd/dubbo.xsd">
-<persistable path="/shop-manager-service/src/main/webapp/META-INF/dtd/dubbo.xsd"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" tooltip="shop-manager-dao/pom.xml">
+<persistable path="/shop-manager-dao/pom.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" tooltip="shop-manager/pom.xml">
+<persistable path="/shop-manager/pom.xml"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" tooltip="shop-manager-service/pom.xml">
 <persistable path="/shop-manager-service/pom.xml"/>
@@ -669,20 +863,17 @@
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" tooltip="shop-parent/pom.xml">
 <persistable path="/shop-parent/pom.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="common.js" tooltip="shop-manager-web/src/main/webapp/js/common.js">
-<persistable path="/shop-manager-web/src/main/webapp/js/common.js"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" tooltip="pagehelper-fix/pom.xml">
+<persistable path="/pagehelper-fix/pom.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="content-category.jsp" tooltip="shop-manager-web/src/main/webapp/WEB-INF/jsp/content-category.jsp">
-<persistable path="/shop-manager-web/src/main/webapp/WEB-INF/jsp/content-category.jsp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SqlUtil.java" tooltip="pagehelper-fix/src/main/java/com/github/pagehelper/SqlUtil.java">
+<persistable path="/pagehelper-fix/src/main/java/com/github/pagehelper/SqlUtil.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.jboss.tools.common.model.ui.editor.EditorPartWrapper" name="web.xml" tooltip="shop-manager-web/src/main/webapp/WEB-INF/web.xml">
-<persistable path="/shop-manager-web/src/main/webapp/WEB-INF/web.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SqlParser.java" tooltip="pagehelper-fix/src/main/java/com/github/pagehelper/SqlParser.java">
+<persistable path="/pagehelper-fix/src/main/java/com/github/pagehelper/SqlParser.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PageController.java" tooltip="shop-manager-web/src/main/java/com/cblue/shop/controller/PageController.java">
-<persistable path="/shop-manager-web/src/main/java/com/cblue/shop/controller/PageController.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="content-add.jsp" tooltip="shop-manager-web/src/main/webapp/WEB-INF/jsp/content-add.jsp">
-<persistable path="/shop-manager-web/src/main/webapp/WEB-INF/jsp/content-add.jsp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PageInfo.java" tooltip="pagehelper-fix/src/main/java/com/github/pagehelper/PageInfo.java">
+<persistable path="/pagehelper-fix/src/main/java/com/github/pagehelper/PageInfo.java"/>
 </file>
 </mruList>
 </workbench>

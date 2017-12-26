@@ -23,6 +23,10 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="/Users/pavel/Documents/workspace/Spring3"/>
+			<item value="/Users/pavel/Documents/workspace/MybatisSpring"/>
+			<item value="/Users/pavel/Documents/workspace/Struts2"/>
+			<item value="/Users/pavel/Documents/workspace/SSH"/>
 			<item value="/Users/pavel/Documents/workspace/shop-manager"/>
 			<item value="/Users/pavel/Documents/workspace/shop-parent/pom.xml"/>
 			<item value="/Users/pavel/Documents/workspace/shop-parent"/>
@@ -37,13 +41,10 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="groupId">
-			<item value="com.cblue"/>
 		</list>
 		<list key="package">
-			<item value="org.shop.manager.web"/>
 		</list>
 		<list key="artifactId">
-			<item value="shop-manager-web"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -104,6 +105,11 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="maven-web"/>
+			<item value="maven-base"/>
+			<item value="maven-test03"/>
+			<item value="maven-test02"/>
+			<item value="maven-test01"/>
 			<item value="shop-manager-web"/>
 			<item value="shop-manager"/>
 			<item value="shop-manager-service"/>

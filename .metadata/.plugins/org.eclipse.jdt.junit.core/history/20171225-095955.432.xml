@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testrun name="TestHello.testHello" project="maven-test02" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testcase name="testHello" classname="com.cblue.test.TestHello" time="0.002"/>
-</testrun>

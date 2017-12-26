@@ -1,0 +1,10 @@
+package com.cblue.pagehelper;
+
+public class PageHelperTest {
+	
+	@Test
+	public void testPageHelper(){
+		
+	}
+
+}

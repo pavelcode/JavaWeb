@@ -2,6 +2,8 @@ package com.cblue.shop.service.impl;
 
 import java.util.List;
 
+import main.java.com.cblue.common.pojo.EasyUIDataGridResult;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -10,6 +12,8 @@ import com.cblue.shop.pojo.TbItem;
 import com.cblue.shop.pojo.TbItemExample;
 import com.cblue.shop.pojo.TbItemExample.Criteria;
 import com.cblue.shop.service.ItemService;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 
 @Service
 public class ItemServiceImpl implements ItemService {
@@ -34,6 +38,25 @@ public class ItemServiceImpl implements ItemService {
 			return list.get(0);
 		}
 		return null;
+	}
+
+	@Override
+	public EasyUIDataGridResult getItemListByPage(int currengPage, int pageSize) {
+		// TODO Auto-generated method stub
+		//设置分页信息
+		PageHelper.startPage(currengPage, pageSize);
+		//执行查询
+		TbItemExample example = new TbItemExample();
+		List<TbItem> list = itemMapper.selectByExample(example);
+		//创建一个返回值对象
+		EasyUIDataGridResult result = new EasyUIDataGridResult();
+		result.setRows(list);
+		//取分页结果
+		PageInfo<TbItem> pageInfo = new PageInfo<TbItem>(list);
+		//取总记录数
+		long total = pageInfo.getTotal();
+		result.setTotal(total);
+		return result;
 	}
 
 }

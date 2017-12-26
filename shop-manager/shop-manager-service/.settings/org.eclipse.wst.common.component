@@ -16,6 +16,9 @@
         <dependent-module archiveName="shop-manager-interface-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/shop-manager-interface/shop-manager-interface">
             <dependency-type>uses</dependency-type>
         </dependent-module>
+        <dependent-module archiveName="shop-common-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/shop-common/shop-common">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="context-root" value="/shop-manager-service"/>
         <property name="java-output-path" value="/shop-manager-service/src/main/webapp/WEB-INF/classes"/>
     </wb-module>

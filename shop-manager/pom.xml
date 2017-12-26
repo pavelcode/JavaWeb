@@ -10,6 +10,13 @@
   <artifactId>shop-manager</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
+  	<dependencies>
+		<dependency>
+			 <groupId>com.cblue</groupId>
+			  <artifactId>shop-common</artifactId>
+			  <version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
   <build>
      <plugins>
 				<!-- 配置Tomcat插件 -->
