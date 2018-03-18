@@ -5,16 +5,17 @@
 	<artifactId>maven-test03</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<build />
-	<parent>
-		<groupId>com.cblue</groupId>
-		<artifactId>maven-base</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
-	</parent>
+	 <parent>
+           <groupId>com.cblue</groupId>
+		   <artifactId>maven-base</artifactId>
+		   <version>0.0.1-SNAPSHOT</version>
+		   <relativePath>../maven-base/pom.xml</relativePath>
+       </parent>
 	<dependencies>
-		<dependency>
-			<groupId>com.cblue</groupId>
-			<artifactId>maven-test02</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
+	  <dependency>
+	    <groupId>com.cblue</groupId>
+		  <artifactId>maven-test02</artifactId>
+		  <version>0.0.1-SNAPSHOT</version>
+	  </dependency>
 	</dependencies>
 </project>

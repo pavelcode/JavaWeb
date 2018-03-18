@@ -1,5 +1,0 @@
-package com.cblue.shop.service;
-
-public interface ItemService {
-
-}

@@ -23,6 +23,7 @@
 	<dubbo:protocol name="dubbo" port="20880" />
 	<!-- 声明需要暴露的服务接口 -->
     <dubbo:service interface="com.cblue.shop.service.ItemService" ref="itemServiceImpl"  timeout="600000"/>
+    <dubbo:service interface="com.cblue.shop.service.ItemCatService" ref="itemCatServiceImpl"  timeout="600000"/>
 	
 	
 

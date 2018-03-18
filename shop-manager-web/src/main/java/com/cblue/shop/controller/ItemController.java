@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.cblue.shop.pojo.TbItem;
@@ -29,10 +30,10 @@ public class ItemController {
 	}
 	
 	@RequestMapping("/item/list")  //在easyui访问数据时，确定的访问地址
-	@ResponseBody  //返回的类型是json格式
-	public EasyUIDataGridResult getItemList(Integer page, Integer rows) {  //page,rows是easyui默认提供的分页参数
+	@ResponseBody  //返回的类型是json格式                             //page,rows是easyui默认提供的分页参数
+	public EasyUIDataGridResult getItemList(@RequestParam(name="page")Integer currentPage,@RequestParam(name="rows")Integer pageSize) {  
 		//调用服务查询商品列表
-		EasyUIDataGridResult result = itemService.getItemListByPage(page, rows);
+		EasyUIDataGridResult result = itemService.getItemListByPage(currentPage,pageSize);
 		return result;
 	}
 

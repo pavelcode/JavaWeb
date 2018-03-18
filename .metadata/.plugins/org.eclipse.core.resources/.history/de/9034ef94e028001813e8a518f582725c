@@ -1,0 +1,7 @@
+package com.cblue.springboot.demo03;
+
+import org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter;
+
+public class MySpringMVCConfig extends WebMvcAutoConfigurationAdapter {
+
+}

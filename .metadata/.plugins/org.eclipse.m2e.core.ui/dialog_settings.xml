@@ -59,6 +59,7 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="/Users/pavel/Documents/workspace/fastdfs_client"/>
 			<item value="/Users/pavel/Documents/workspace/pagehelper-fix"/>
 			<item value="/Users/pavel/Downloads/pagehelper-fix"/>
 			<item value="/Users/pavel/Documents/workspace/"/>

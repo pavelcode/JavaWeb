@@ -5,10 +5,11 @@
   <version>0.0.1-SNAPSHOT</version>
   <build/>
         <parent>
-         <groupId>com.cblue</groupId>
-		  <artifactId>maven-base</artifactId>
-		  <version>0.0.1-SNAPSHOT</version>
-    </parent>
+           <groupId>com.cblue</groupId>
+		   <artifactId>maven-base</artifactId>
+		   <version>0.0.1-SNAPSHOT</version>
+		   <relativePath>../maven-base/pom.xml</relativePath>
+       </parent>
   <dependencies>
     <dependency>
          <groupId>com.cblue</groupId>

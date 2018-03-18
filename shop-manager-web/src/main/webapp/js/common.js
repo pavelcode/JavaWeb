@@ -104,33 +104,41 @@ var E3 = {
     
     // 初始化选择类目组件
     initItemCat : function(data){
+    	//each 遍历  i是索引下标   e是dom对象
+    	//我们这里使用单页面程序，点击左侧菜单规格参数－－新增，会在页面中出现多个.selectItemCat,使用each，会遍历所有对class按钮，添加相同的操作
     	$(".selectItemCat").each(function(i,e){
-    		var _ele = $(e);
+    		var _ele = $(e); //把dom对象转换为jquery对象
     		if(data && data.cid){
+    			//把选择的商品栏目显示在span中
     			_ele.after("<span style='margin-left:10px;'>"+data.cid+"</span>");
     		}else{
     			_ele.after("<span style='margin-left:10px;'></span>");
     		}
+    		//如果之前绑定了click事件，就取消绑定，重新绑定click
     		_ele.unbind('click').click(function(){
     			$("<div>").css({padding:"5px"}).html("<ul>")
-    			.window({
+    			.window({  //打开一个窗口
     				width:'500',
     			    height:"450",
     			    modal:true,
     			    closed:true,
     			    iconCls:'icon-save',
     			    title:'选择类目',
-    			    onOpen : function(){
+    			    onOpen : function(){//当窗口打开的时候
     			    	var _win = this;
-    			    	$("ul",_win).tree({
-    			    		url:'/item/cat/list',
+    			    	$("ul",_win).tree({//初始化tree
+    			    		url:'/item/cat/list',//请求数据
     			    		animate:true,
     			    		onClick : function(node){
-    			    			if($(this).tree("isLeaf",node.target)){
-    			    				// 填写到cid中
+    			    			//判断是否叶子节点
+    			    			if($(this).tree("isLeaf",node.target)){//显示树型结构
+    			    				//找到链接下面的隐藏域，把值为id的值
     			    				_ele.parent().find("[name=cid]").val(node.id);
+    			    				//在链接后面显示栏目内容，并添加cid的属性，属性值是id值
     			    				_ele.next().text(node.text).attr("cid",node.id);
+    			    				//窗口关闭
     			    				$(_win).window('close');
+    			    				//如果有回调就回调
     			    				if(data && data.fun){
     			    					data.fun.call(this,node);
     			    				}

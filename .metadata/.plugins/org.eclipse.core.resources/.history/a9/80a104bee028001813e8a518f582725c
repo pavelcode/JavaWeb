@@ -1,0 +1,9 @@
+package com.cblue.springboot.demo03;
+
+
+
+public class MySpringMVCConfig extends WebMvcConfigurerAdapter {
+
+	
+
+}
