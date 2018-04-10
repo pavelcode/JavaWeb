@@ -10341,3 +10341,196 @@ java.io.IOException: Server returned status code 403: Forbidden
 	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895) ~[na:1.6.0_65]
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918) ~[na:1.6.0_65]
 	at java.lang.Thread.run(Thread.java:695) ~[na:1.6.0_65]
+2018-04-10 16:35:47,115 [Worker-7] INFO  o.e.m.c.i.i.nexus.NexusIndexManager - Updating index for repository: central|http://repo1.maven.org/maven2
+2018-04-10 16:35:48,245 [Worker-7] ERROR o.e.m.c.i.i.nexus.NexusIndexManager - Unable to update index for central|http://repo1.maven.org/maven2
+java.io.IOException: Server returned status code 403: Forbidden
+	at org.eclipse.m2e.core.internal.index.nexus.AsyncFetcher$PipedErrorInputStream.checkError(AsyncFetcher.java:253) ~[org.eclipse.m2e.core_1.0.0.me201110301321.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.AsyncFetcher$PipedErrorInputStream.read(AsyncFetcher.java:261) ~[org.eclipse.m2e.core_1.0.0.me201110301321.jar:na]
+	at java.io.PipedInputStream.read(PipedInputStream.java:361) ~[na:1.6.0_65]
+	at java.io.InputStream.read(InputStream.java:82) ~[na:1.6.0_65]
+	at java.util.Properties$LineReader.readLine(Properties.java:418) ~[na:1.6.0_65]
+	at java.util.Properties.load0(Properties.java:337) ~[na:1.6.0_65]
+	at java.util.Properties.load(Properties.java:325) ~[na:1.6.0_65]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.downloadIndexProperties(DefaultIndexUpdater.java:457) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.access$100(DefaultIndexUpdater.java:75) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater$IndexAdaptor.setProperties(DefaultIndexUpdater.java:607) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:788) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:135) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.updateRemoteIndex(NexusIndexManager.java:1126) [org.eclipse.m2e.core_1.0.0.me201110301321.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.updateIndex(NexusIndexManager.java:1083) [org.eclipse.m2e.core_1.0.0.me201110301321.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager$1.run(NexusIndexManager.java:660) [org.eclipse.m2e.core_1.0.0.me201110301321.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.IndexUpdaterJob.run(IndexUpdaterJob.java:71) [org.eclipse.m2e.core_1.0.0.me201110301321.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.100.v20110404.jar:na]
+java.io.IOException: Server returned status code 403: Forbidden
+	at org.eclipse.m2e.core.internal.index.nexus.AsyncFetcher$MonitorListener.onStatus(AsyncFetcher.java:283) ~[na:na]
+	at com.ning.http.client.SimpleAsyncHttpClient$BodyConsumerAsyncHandler.fireStatus(SimpleAsyncHttpClient.java:828) ~[na:na]
+	at com.ning.http.client.SimpleAsyncHttpClient$BodyConsumerAsyncHandler.onStatusReceived(SimpleAsyncHttpClient.java:779) ~[na:na]
+	at com.ning.http.client.providers.netty.NettyAsyncHttpProvider.updateStatusAndInterrupt(NettyAsyncHttpProvider.java:1439) ~[na:na]
+	at com.ning.http.client.providers.netty.NettyAsyncHttpProvider.messageReceived(NettyAsyncHttpProvider.java:1170) ~[na:na]
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:80) ~[na:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:545) ~[na:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:754) ~[na:na]
+	at org.jboss.netty.handler.stream.ChunkedWriteHandler.handleUpstream(ChunkedWriteHandler.java:148) ~[na:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:545) ~[na:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:754) ~[na:na]
+	at org.jboss.netty.handler.codec.http.HttpContentDecoder.messageReceived(HttpContentDecoder.java:104) ~[na:na]
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:80) ~[na:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:545) ~[na:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:754) ~[na:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:302) ~[na:na]
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.unfoldAndfireMessageReceived(ReplayingDecoder.java:522) ~[na:na]
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.callDecode(ReplayingDecoder.java:506) ~[na:na]
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.messageReceived(ReplayingDecoder.java:443) ~[na:na]
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:80) ~[na:na]
+	at org.jboss.netty.handler.codec.http.HttpClientCodec.handleUpstream(HttpClientCodec.java:77) ~[na:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:545) ~[na:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:540) ~[na:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:274) ~[na:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:261) ~[na:na]
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:349) ~[na:na]
+	at org.jboss.netty.channel.socket.nio.NioWorker.processSelectedKeys(NioWorker.java:280) ~[na:na]
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:200) ~[na:na]
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108) ~[na:na]
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:44) ~[na:na]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895) ~[na:1.6.0_65]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918) ~[na:1.6.0_65]
+	at java.lang.Thread.run(Thread.java:695) ~[na:1.6.0_65]
+2018-04-10 17:02:46,469 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: fastdfs_client:fastdfs_client:1.25 @ /Users/pavel/Documents/workspace/fastdfs_client/pom.xml.
+2018-04-10 17:02:48,602 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.apache.commons:commons-io:jar:1.3.2 has been relocated to commons-io:commons-io:jar:1.3.2
+2018-04-10 17:02:49,116 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2018-04-10 17:02:49,121 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-04-10 17:02:49,130 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2018-04-10 17:02:49,131 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-04-10 17:02:50,321 [Worker-12] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.cblue:maven-base:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/maven-base/pom.xml.
+2018-04-10 17:02:50,358 [Worker-12] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:maven-test02:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/maven-test02/pom.xml.
+2018-04-10 17:02:50,696 [Worker-12] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:maven-test02:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/maven-test02/pom.xml.
+2018-04-10 17:02:51,325 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2018-04-10 17:02:51,326 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-04-10 17:02:51,329 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2018-04-10 17:02:51,330 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-04-10 17:02:52,562 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.github.pagehelper:pagehelper:3.4.2-fix @ /Users/pavel/Documents/workspace/pagehelper-fix/pom.xml.
+2018-04-10 17:02:52,698 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2018-04-10 17:02:52,700 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-04-10 17:02:52,702 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (EUC_CN actually) to copy filtered resources, i.e. build is platform dependent!
+2018-04-10 17:02:52,703 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-04-10 17:02:52,931 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:shop-common:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/shop-common/pom.xml.
+2018-04-10 17:02:53,079 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.apache.commons:commons-io:jar:1.3.2 has been relocated to commons-io:commons-io:jar:1.3.2
+2018-04-10 17:02:53,670 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-04-10 17:02:53,672 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-04-10 17:02:53,675 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-04-10 17:02:53,685 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-04-10 17:02:53,979 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.cblue:shop-manager:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/shop-manager/pom.xml.
+2018-04-10 17:02:54,177 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:shop-manager-interface:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/shop-manager/shop-manager-interface/pom.xml.
+2018-04-10 17:02:54,244 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:shop-manager-service:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/shop-manager/shop-manager-service/pom.xml.
+2018-04-10 17:02:54,405 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:shop-manager-dao:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/shop-manager/shop-manager-dao/pom.xml.
+2018-04-10 17:02:54,433 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:shop-manager-web:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/shop-manager-web/pom.xml.
+2018-04-10 17:02:54,495 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:shop-manager-pojo:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/shop-manager/shop-manager-pojo/pom.xml.
+2018-04-10 17:02:56,655 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:shop-manager-pojo:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/shop-manager/shop-manager-pojo/pom.xml.
+2018-04-10 17:02:56,872 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-04-10 17:02:56,873 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-04-10 17:02:56,874 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-04-10 17:02:56,875 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-04-10 17:02:57,082 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:shop-manager-interface:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/shop-manager/shop-manager-interface/pom.xml.
+2018-04-10 17:02:57,297 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-04-10 17:02:57,312 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-04-10 17:02:57,314 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-04-10 17:02:57,315 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-04-10 17:02:57,736 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:shop-manager-dao:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/shop-manager/shop-manager-dao/pom.xml.
+2018-04-10 17:02:58,152 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-04-10 17:02:58,158 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2018-04-10 17:02:58,198 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-04-10 17:02:58,199 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-04-10 17:02:58,529 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:shop-manager-service:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/shop-manager/shop-manager-service/pom.xml.
+2018-04-10 17:02:59,395 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-04-10 17:02:59,398 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2018-04-10 17:02:59,419 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-04-10 17:02:59,419 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-04-10 17:03:20,520 [Worker-12] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:shop-manager-web:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/shop-manager-web/pom.xml.
+2018-04-10 17:03:21,011 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-04-10 17:03:21,012 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2018-04-10 17:03:21,017 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-04-10 17:03:21,017 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-04-10 17:03:21,493 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.cblue:shop-parent:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/shop-parent/pom.xml.
+2018-04-10 17:03:21,515 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:shop-common:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/shop-common/pom.xml.
+2018-04-10 17:03:21,664 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.apache.commons:commons-io:jar:1.3.2 has been relocated to commons-io:commons-io:jar:1.3.2
+2018-04-10 17:03:21,669 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.cblue:shop-manager:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/shop-manager/pom.xml.
+2018-04-10 17:03:21,697 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:shop-manager-pojo:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/shop-manager/shop-manager-pojo/pom.xml.
+2018-04-10 17:03:21,719 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:shop-manager-interface:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/shop-manager/shop-manager-interface/pom.xml.
+2018-04-10 17:03:21,770 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:shop-manager-dao:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/shop-manager/shop-manager-dao/pom.xml.
+2018-04-10 17:03:21,857 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:shop-manager-service:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/shop-manager/shop-manager-service/pom.xml.
+2018-04-10 17:03:21,993 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:shop-manager-web:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/shop-manager-web/pom.xml.
+2018-04-10 17:03:23,407 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cblue:springboot:0.0.1-SNAPSHOT @ /Users/pavel/Documents/workspace/springboot/pom.xml.
+2018-04-10 17:03:24,622 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-04-10 17:03:24,623 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-04-10 17:03:24,648 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2018-04-10 17:03:24,656 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-04-10 17:03:24,656 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-04-10 17:04:33,065 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-04-10 17:04:33,069 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-04-10 17:04:33,071 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-04-10 17:04:33,072 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-04-10 17:04:33,092 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-04-10 17:04:33,093 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-04-10 17:04:33,102 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-04-10 17:04:33,102 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-04-10 17:04:33,122 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-04-10 17:04:33,122 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-04-10 17:04:33,124 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-04-10 17:04:33,124 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-04-10 17:04:33,156 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-04-10 17:04:33,156 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-04-10 17:04:33,157 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-04-10 17:04:33,158 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-04-10 17:04:33,187 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-04-10 17:04:33,188 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-04-10 17:04:33,190 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-04-10 17:04:33,191 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-04-10 17:04:33,234 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-04-10 17:04:33,234 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-04-10 17:04:33,235 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-04-10 17:04:33,236 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-04-10 17:04:33,342 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-04-10 17:04:33,347 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-04-10 17:04:33,349 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2018-04-10 17:04:33,351 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-04-10 17:04:33,352 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-04-10 17:04:51,845 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-04-10 17:04:51,846 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-04-10 17:04:51,847 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2018-04-10 17:04:51,849 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-04-10 17:04:51,849 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-04-10 17:05:08,103 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-04-10 17:05:08,104 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-04-10 17:05:08,107 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2018-04-10 17:05:08,110 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-04-10 17:05:08,110 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-04-10 17:05:35,815 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-04-10 17:05:35,816 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-04-10 17:05:35,821 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2018-04-10 17:05:35,824 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-04-10 17:05:35,824 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-04-10 17:05:40,377 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-04-10 17:05:40,377 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-04-10 17:05:40,379 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2018-04-10 17:05:40,380 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-04-10 17:05:40,381 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-04-10 17:05:46,485 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-04-10 17:05:46,486 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-04-10 17:05:46,488 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2018-04-10 17:05:46,490 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-04-10 17:05:46,490 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-04-10 17:06:03,752 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-04-10 17:06:03,753 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-04-10 17:06:03,755 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2018-04-10 17:06:03,760 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-04-10 17:06:03,760 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-04-10 17:06:05,493 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-04-10 17:06:05,493 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-04-10 17:06:05,495 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2018-04-10 17:06:05,497 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-04-10 17:06:05,497 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-04-10 17:07:42,509 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-04-10 17:07:42,511 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-04-10 17:07:42,513 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2018-04-10 17:07:42,514 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-04-10 17:07:42,515 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
